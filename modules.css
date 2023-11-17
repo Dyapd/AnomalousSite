@@ -1,3 +1,23 @@
 /* this css if for the elements in a layout, (dropdown, logo etc..)*/
 /* combine to one css when done*/
 /* for organization purposes*/
+
+
+
+/*following is for entry template*/
+.container{
+    border-color: black;
+    padding: 15px;
+    flex-direction: row;
+    
+}
+
+.container h1{
+    font-size: 40px;
+}
+
+.container img{
+    border: 2px solid black;
+    float: left;
+    margin-right: 20px;
+}

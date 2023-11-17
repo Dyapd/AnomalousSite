@@ -1,3 +1,21 @@
 /* this css is for the sections of a webpage ( header, sections, articles, footers etc..)*/
 /* combine to one css when done*/
 /* for organization purposes*/
+
+.topnav{
+    text-align: right;
+    margin-bottom: 50px;
+    display: block;
+    padding: 50px;
+    color: aqua;
+}
+
+.topnav a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.topnav a:hover{
+    color: gray;
+}
