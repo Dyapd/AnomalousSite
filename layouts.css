@@ -7,21 +7,43 @@
     display: block;
     background-color: lightblue;
     line-height: 70px;
+    height: 70px;
     
 }
 
 .topnav{
-    text-align: right;
     margin-bottom: 25px;
 }
 
-.topnav a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: black;
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.topnav a:hover{
+.topnav ul li {
+    display: inline;
+}
+
+.topnav ul li img {
+    
+}
+
+
+.topnav ul li a {
+    float: right;
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.topnav ul li a:hover {
     color: gray;
 }
+
+
+.topnav img {
+    text-align: left;
+}
+
 
