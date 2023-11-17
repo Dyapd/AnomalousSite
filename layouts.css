@@ -2,16 +2,21 @@
 /* combine to one css when done*/
 /* for organization purposes*/
 
+
+.header{
+    display: block;
+    background-color: lightblue;
+    line-height: 70px;
+    
+}
+
 .topnav{
     text-align: right;
-    margin-bottom: 50px;
-    display: block;
-    padding: 50px;
-    color: aqua;
+    margin-bottom: 25px;
 }
 
 .topnav a {
-    margin-left: 10px;
+    margin-right: 10px;
     text-decoration: none;
     color: black;
 }
@@ -19,3 +24,4 @@
 .topnav a:hover{
     color: gray;
 }
+
