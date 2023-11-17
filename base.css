@@ -1,3 +1,7 @@
 /* This is css is for all the pages*/
 /* combine to one css when done*/
 /* for organization purposes*/
+
+body {
+    background-color: antiquewhite;
+}
