@@ -16,10 +16,6 @@
     padding: 0;
 }
 
-.topnav ul li {
-    display: inline;
-}
-
 .topnav ul li a {
     float: right;
     display: block;
