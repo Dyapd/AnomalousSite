@@ -8,11 +8,6 @@
     background-color: lightblue;
     line-height: 70px;
     height: 70px;
-    
-}
-
-.topnav{
-    margin-bottom: 25px;
 }
 
 .topnav ul {
@@ -25,16 +20,13 @@
     display: inline;
 }
 
-.topnav ul li img {
-    
-}
-
-
 .topnav ul li a {
     float: right;
+    display: block;
     color: black;
+    text-align: center;
     text-decoration: none;
-    margin-right: 20px;
+    padding: 5px 20px;
 }
 
 .topnav ul li a:hover {
