@@ -2,33 +2,51 @@
 /* combine to one css when done*/
 /* for organization purposes*/
 
+/* styles for classes inside home-main */
 
-
-/*following is for entry template*/
-.main{
-    border-color: black;
-    padding: 15px;
-    flex-direction: row;
+.main-home-container{
+    width: 60%;
+    border: solid yellow;
+    align-items: center;
+    
 }
 
-.main-container{
-    width: 70%;
-    margin: 0 auto;
+.content-top-center-home{
+    align-items: center;
+    width: 100%;
+    
 }
 
-.main h1{
-    font-size: 40px;
+.home-top-box{
+    margin-top: -5px;
+    height: 70px;
+    width: 100%;
+    background: rgb(23,47,82);
+    background: linear-gradient(rgba(23,47,82,1) 0%, rgba(62,146,172,1) 100%);
+    margin-bottom: 50px;
 }
 
-.image-left{
-    border: 2px solid black;
-    float: right;
-    margin-right: 20px;
-    width: 20%;
-    height: 20%;
+.home-top-box p{
+    color: white;
+    text-align: end;
 }
 
-.image-left img{
-    max-width: 100%;
-    max-height: 100%;
+.content-top-center-home img{
+    width: 100%;
+}
+
+.content-bottom-row-home{
+    
+}
+
+.content-left-home{
+    border: solid yellow;
+    width: 50%;
+    height: 500px;
+}
+
+.content-right-home{
+    border: solid blue;
+    width: 50%;
+    height: 500px;
 }

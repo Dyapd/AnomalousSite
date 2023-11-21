@@ -1,11 +1,19 @@
 /* This is css is for all the pages*/
+/* applies to all pages */
 /* combine to one css when done*/
 /* for organization purposes*/
 
-body {
-    background-color: white;
-    margin: 0px;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 

@@ -2,81 +2,57 @@
 /* combine to one css when done*/
 /* for organization purposes*/
 
-
-.header{
-    display: block;
-    background-color: rgb(197, 197, 197);
-    line-height: 70px;
-    height: 70px;
+/* header styles */
+header{
+    height: 100px;
+    background-color: #172F52;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: black;
 }
 
-.topnav{
-    width: 70%;
-    margin: 0 auto;
-}
-
-.topnav ul {
+header nav ul{
+    display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    align-items: center;
 }
 
-.topnav ul li {
-    display: inline;
-}
-
-.topnav ul li a {
-    float: right;
-    color: black;
+header nav ul a {
     text-decoration: none;
-    padding: 5px 20px;
+    color: white;
+    margin-right: 20px;
+    font-size: 18px;
 }
 
-
-.topnav ul li a:hover {
+header nav ul a:hover {
     color: gray;
 }
 
-.topnav input[type=text] {
-    float:right;
-    margin-top: 28px;
-    margin-left: 5px;
-    padding: 5px;
-    border: none;
-}
-
-.topnav .search-container {
-    float: right;
-}
-
-.topnav .search-container button{
-    float: right;
-    padding: 5px 10px;
-    margin-top: 28px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 25;
-    border: none;
-    cursor: pointer;
-}
-
-
-.topnav img {
-    float: left;
-    width: 50px;
+footer{
     height: 50px;
-    margin-top: 10px;
-}
-
-
-.footer{
-    background-color: black;
-    padding: 20px;
-    text-align: center;
+    width: 100%;
+    background-color: #172F52;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: black;
     position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
 }
 
+footer p{
+    color: white;
+}
 
+/* style for main content of home page main body */
+.main-home{
+    display: flex;
+    min-height: 100vh;
+    width: 60%;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    border: solid rebeccapurple;
+}
