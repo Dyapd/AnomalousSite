@@ -2,7 +2,8 @@
 /* combine to one css when done*/
 /* for organization purposes*/
 
-/* styles for classes inside home-main */
+
+/* styles for classes inside main-home */
 
 .main-home-container{
     width: 60%;
@@ -35,10 +36,6 @@
     width: 100%;
 }
 
-.content-bottom-row-home{
-    
-}
-
 .content-left-home{
     border: solid yellow;
     width: 50%;
@@ -49,4 +46,20 @@
     border: solid blue;
     width: 50%;
     height: 500px;
+}
+
+/* separate styles of each page by comment  */
+/* styles for main-entry */
+
+.content-left-entrytem{
+    width: 30%;
+    margin: auto;
+}
+
+.content-left-entrytem img{
+    width: 100%;
+}
+
+.content-right-entrytem{
+    width: 50%;
 }
