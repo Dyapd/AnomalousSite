@@ -19,6 +19,24 @@ header nav ul{
     list-style-type: none;
 }
 
+.search-container{
+    display: inline-flex;
+    border-radius: 10px;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    
+}
+
+.searchBox{
+    border: 0;
+    flex: 1;
+}
+
 header nav ul a {
     text-decoration: none;
     color: white;
