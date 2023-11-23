@@ -6,6 +6,7 @@
 header{
     height: 100px;
     background-color: #172F52;
+    background: linear-gradient(rgba(23,47,82,1) 36%, rgba(18,37,64,1) 100%);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,7 +17,6 @@ header{
 header nav ul{
     display: flex;
     list-style-type: none;
-    align-items: center;
 }
 
 header nav ul a {
@@ -30,7 +30,19 @@ header nav ul a:hover {
     color: gray;
 }
 
+.header-bottomshape {
+    background: #122540;
+    height: 35px;
+    border-top: black solid 1px;
+    display: flex;
+    align-items: center;
+    
+}
 
+.header-bottomshape li a {
+    font-size: 16px;
+    padding: 5px 30px 5px 30px;
+}
 
 footer{
     height: 50px;
