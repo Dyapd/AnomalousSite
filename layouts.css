@@ -20,6 +20,8 @@ header nav ul{
 }
 
 .search-container{
+    height: 30px;
+    width: 225px;
     display: inline-flex;
     border-radius: 10px;
     border: 1px solid gray;
