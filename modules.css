@@ -65,6 +65,7 @@
 .content-left-home h1{
     text-align: center;
     margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .content-left-home ul{
@@ -92,6 +93,7 @@
 .content-right-home h1{
     text-align: center;
     margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .content-right-home ul{
@@ -109,6 +111,9 @@
     text-decoration: none;
 }
 
+
+
+
 /* separate styles of each page by comment  */
 /* styles for main-entry */
 
@@ -124,3 +129,6 @@
 .content-right-entrytem{
     width: 50%;
 }
+
+/* styles for about us */
+

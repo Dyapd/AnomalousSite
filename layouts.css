@@ -85,9 +85,11 @@ footer{
     position: absolute;
 }
 
-footer p{
+
+footer a{
     color: #A6941A;
     margin-left: 50px;
+    text-decoration: none;
 }
 
 /* style for main content of home page main body */
