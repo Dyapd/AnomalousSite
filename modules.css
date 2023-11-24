@@ -17,13 +17,24 @@
     
 }
 
+.main-line{
+    width: 100%;
+    background: black;
+    height: 5px;
+    margin-bottom: 15px;
+}
+
 .home-top-box{
     margin-top: -5px;
     height: 70px;
     width: 100%;
-    background: rgb(23,47,82);
-    background: linear-gradient(rgba(23,47,82,1) 0%, rgba(62,146,172,1) 100%);
+    background: #152133;
     margin-bottom: 50px;
+}
+
+
+.home-top-box h2{
+    color: white;
 }
 
 .home-top-box p{
@@ -31,8 +42,19 @@
     text-align: end;
 }
 
+.home-top-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* 
 .content-top-center-home img{
     width: 100%;
+} */
+
+.home-main-img{
+    width: 50%;
 }
 
 .content-left-home{
@@ -41,6 +63,7 @@
 }
 
 .content-right-home{
+
     width: 50%;
     height: 500px;
 }
