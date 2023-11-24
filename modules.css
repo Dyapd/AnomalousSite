@@ -7,7 +7,6 @@
 
 .main-home-container{
     width: 60%;
-    border: solid yellow;
     align-items: center;
     
 }
@@ -37,13 +36,11 @@
 }
 
 .content-left-home{
-    border: solid yellow;
     width: 50%;
     height: 500px;
 }
 
 .content-right-home{
-    border: solid blue;
     width: 50%;
     height: 500px;
 }
