@@ -148,3 +148,121 @@
 
 /* styles for about us */
 
+
+
+
+/* styles for search page*/
+
+/* top content */
+.content-top-search{
+    width: 100%;
+}
+
+.content-top-search h1{ 
+    margin: 0 20%;
+} 
+
+/* content for search options */
+.content-bottom-search{
+    margin-top: -200px; 
+    padding: 200px 0;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* search bar */
+.search-container-main-search{
+    height: 35px;
+    width: 100%;
+    display: inline-flex;
+    border: none;
+    background-color: #c0c0c0;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.search-icon-main-search {
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.searchBox-main-search{
+    border: 0;
+    flex: 1;
+    color: black;
+    background-color: rgba(0,0,0,0);
+}
+
+.searchBox-main-search::placeholder{
+    padding: 3px;
+    color: black;
+    opacity: 1;
+}
+
+/* dropdown menu */
+.search-dropdown-first{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.search-dropdown-first button{
+    display: flex;
+    justify-content: space-between;
+    background-color: #c0c0c0;
+    color: black;
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.search-dropdown-first img{
+   text-align: right;
+    
+}
+
+.search-dropdown-first:hover .search-dropdown-firstmenu{
+    display: block;
+}
+
+.search-dropdown-firstmenu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.search-dropdown-firstmenu {
+    display: none;
+    background-color:#bfbfbf;
+    position:absolute;
+    min-width: 904px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, .8);
+}
+
+.search-dropdown-first:hover button{
+    background-color: #d7d3d3;
+}
+
+.search-dropdown-firstmenu a:hover{
+    background-color: #d7d3d3;
+}
+
+/* submit buttton */
+.search-submit-btn{
+    align-self: flex-end;
+    padding: 10px 15px;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+    background-color:A6A6A6 ;
+}
+
+.search-submit-btn:hover{
+    background-color: #d7d3d3;
+}
