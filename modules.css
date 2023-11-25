@@ -113,21 +113,37 @@
 
 
 
-
 /* separate styles of each page by comment  */
 /* styles for main-entry */
 
-.content-left-entrytem{
-    width: 30%;
-    margin: auto;
+.content-top-entrytem{
+    text-align: center;
+    width: 100%;
+    margin: 5px 0 20px 0;
 }
 
-.content-left-entrytem img{
-    width: 100%;
+.content-left-entrytem{
+    width: 50%;  
 }
 
 .content-right-entrytem{
     width: 50%;
+    border: 2px solid black;
+}
+
+.content-right-entrytem img{
+    width: 100%;
+}
+.entry-line{
+    width: 100%;
+    border-bottom: 2px dotted black;
+    height: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.content-bottom-entrytem{
+    font-family: Oswald;
 }
 
 /* styles for about us */
