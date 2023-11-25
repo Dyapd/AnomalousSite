@@ -147,7 +147,6 @@ footer a{
 .main-search{
     display: flex;
     flex-wrap: wrap;
-    min-height: 100vh;
     align-items: flex-start;
     justify-content: center;
 }
