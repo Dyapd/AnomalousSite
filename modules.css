@@ -2,6 +2,7 @@
 /* combine to one css when done*/
 /* for organization purposes*/
 
+/* separate styles of each page by comment  */
 
 /* styles for classes inside main-home */
 
@@ -112,7 +113,6 @@
 
 
 
-/* separate styles of each page by comment  */
 /* styles for main-entry */
 
 .content-top-entrytem{
@@ -151,6 +151,7 @@
 
 
 /* styles for search page*/
+
 
 /* top content */
 .content-top-search{
@@ -267,6 +268,7 @@
 .search-submit-btn:hover{
     background-color: #d7d3d3;
 }
+
 
 /* style for contact us page */
 

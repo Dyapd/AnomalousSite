@@ -173,6 +173,16 @@ footer a{
 }
 /* style for terminologies page */
 
+.main-terms{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 265px);
+    width: 60%;
+    margin: auto;
+}
+
+
 /* style for faq page */
 .main-faq{
     display: flex;
