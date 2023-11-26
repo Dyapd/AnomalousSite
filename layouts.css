@@ -130,18 +130,6 @@ footer a{
     margin: auto;
 }
 
-.main-about h1{
-    width: 100%;
-    text-align: center;
-}
-
-.main-about img{
-    width: 500px;
-}
-
-.main-about p {
-    font-size: 16px;
-}
 
 /* style for search page */
 .main-search{
