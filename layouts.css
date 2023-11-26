@@ -191,3 +191,27 @@ footer a{
     width: 60%;
     margin: auto;
 }
+
+/* style for privacy page */
+
+.main-privacy{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    min-height: calc(100vh - 265px);
+    width: 60%;
+    margin: auto;
+}
+
+/* style for terms and agreements page */
+
+.main-termsand{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    min-height: calc(100vh - 265px);
+    width: 60%;
+    margin: auto;
+}
