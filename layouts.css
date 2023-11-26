@@ -99,7 +99,7 @@ footer a{
 /* style for main content of home page main body */
 .main-home{
     display: flex;
-    min-height: 100vh;
+    min-height: calc(100vh - 265px);
     width: 60%;
     align-items: center;
     justify-content: space-evenly;
@@ -110,7 +110,7 @@ footer a{
 /* style for the entry template */
 .main-entry{
     display: flex;
-    min-height: 100vh;
+    min-height: calc(100vh - 265px);
     width: 60%;
     align-items: center;
     justify-content: center;
@@ -123,7 +123,7 @@ footer a{
 .main-about{
     display: flex;
     flex-wrap: wrap;
-    min-height: 100vh;
+    min-height: calc(100vh - 265px);
     width: 60%;
     align-items: center;
     justify-content: center;
@@ -147,6 +147,7 @@ footer a{
 .main-search{
     display: flex;
     flex-wrap: wrap;
+    min-height: calc(100vh - 265px);
     align-items: flex-start;
     justify-content: center;
 }
@@ -155,23 +156,29 @@ footer a{
 .main-entrysubmission{
     display: flex;
     flex-wrap: wrap;
-    min-height: 100vh;
+    min-height: calc(100vh - 265px);
     width: 60%;
     justify-content: center;
     margin: auto;
 }
 
 /* style for contact us page */
-
+.main-contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 265px);
+    width: 60%;
+    margin: auto;
+}
 /* style for terminologies page */
 
 /* style for faq page */
 .main-faq{
     display: flex;
     flex-direction: column;
-    align-items: ;
     flex-wrap: wrap;
-    min-height: 100vh;
+    min-height: calc(100vh - 265px);
     width: 60%;
     margin: auto;
 }
