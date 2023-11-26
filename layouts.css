@@ -150,3 +150,28 @@ footer a{
     align-items: flex-start;
     justify-content: center;
 }
+
+/* style for entry submission page */
+.main-entrysubmission{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 60%;
+    justify-content: center;
+    margin: auto;
+}
+
+/* style for contact us page */
+
+/* style for terminologies page */
+
+/* style for faq page */
+.main-faq{
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 60%;
+    margin: auto;
+}

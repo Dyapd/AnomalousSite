@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="layouts.css">
     <link rel="stylesheet" href="modules.css">
-    <title>Search Page</title>
+    <title>Entry Submission</title>
 </head>
 <body>
     <header>
@@ -33,27 +33,22 @@
         </nav>
     </header>
 
-    <main class="main-search">
+    <main class="main-entrysubmission">
+        <h1>
+            Entry Submission
+        </h1>
 
-        <div class="content-top-search">
-            <h1>
-                Advanced Search
-            </h1>
-            <hr>
-        </div>
-
-        <div class="content-bottom-search">
-
-
-            <div class="search-container-main-search">
-                <img class="search-icon-main-search" src="images/placeholdericon.png" alt="search">
-                <input class="searchBox-main-search" type="search" name="search" placeholder="Search...">
-            </div>  
-
-            <p>
-                Filters:
-            </p>
-
+        <form action="#">
+            <label for="name">Name*</label> <br>
+            <input type="text"> <br>
+            <label for="anomalylocation">Anomaly Location*</label> <br>
+            <input type="text"> <br>
+            <label for="investigationtitle">Investigation Name (Title)*</label> <br>
+            <input type="text"> <br>
+            <label for="report">Investigation Report*</label> <br>
+            <input type="text"> <br>
+            <label for="name">Drop or select files here ONLY A PLACEHOLDER</label> <br>
+            <input type="radio"> <br>   
             <div class="search-dropdown-first">
                 <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Classification:
@@ -65,10 +60,9 @@
                     <a class="dropdown-item" href="#">Something else here</a>
                 </ul>
             </div>
-            <br>
             <div class="search-dropdown-first">
                 <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Type:
+                    Classification:
                     <img src="images/arrowdown.png" alt="">
                 </button>
                 <ul class="search-dropdown-firstmenu">
@@ -77,23 +71,8 @@
                     <a class="dropdown-item" href="#">Something else here</a>
                 </ul>
             </div>
-            <br>
-            <div class="search-dropdown-first">
-                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Threat Level: 
-                    <img src="images/arrowdown.png" alt="">
-                </button>
-                <ul class="search-dropdown-firstmenu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </ul>
-            </div>
-
-            <button class="search-submit-btn">
-                Submit
-            </button>
-        </div>
+            <input type="submit" value="Submit">
+        </form>
     </main>
 
     <footer>

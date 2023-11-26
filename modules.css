@@ -14,7 +14,6 @@
 .content-top-center-home{
     align-items: center;
     width: 100%;
-    
 }
 
 .main-line{
@@ -268,3 +267,37 @@
 .search-submit-btn:hover{
     background-color: #d7d3d3;
 }
+
+/* style for contact us page */
+
+/* style for terminologies page */
+
+/* styles for faq page */
+
+.top-container-faq{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.top-container-faq img{
+    width: 40px;
+    height: 40px;
+    margin-top: -15px;
+}
+
+.bottom-container-faq{
+    margin-top: 50px;
+}
+
+.bottom-container-faq h2{
+    width: 100%;
+}
+
+.bottom-container-faq p{
+    margin-bottom: 15px;
+}
+
