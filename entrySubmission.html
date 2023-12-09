@@ -39,6 +39,8 @@
         </h1>
 
         <form action="#">
+            <br>
+
             <label for="name">Name*</label> <br>
             <input type="text"> <br>
             <label for="anomalylocation">Anomaly Location*</label> <br>
@@ -47,31 +49,40 @@
             <input type="text"> <br>
             <label for="report">Investigation Report*</label> <br>
             <input type="text"> <br>
-            <label for="name">Drop or select files here ONLY A PLACEHOLDER</label> <br>
-            <input type="radio"> <br>   
-            <div class="search-dropdown-first">
-                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Classification:
-                    <img src="images/arrowdown.png" alt="">
-                </button>
-                <ul class="search-dropdown-firstmenu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </ul>
-            </div>
-            <div class="search-dropdown-first">
-                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Classification:
-                    <img src="images/arrowdown.png" alt="">
-                </button>
-                <ul class="search-dropdown-firstmenu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </ul>
-            </div>
+            <input type="file" id="fileInput"> <br>   
+
+            <select name="sub-sel1" id="type"> 
+                <option value="tall">Type: All</option>
+                <option value="object">Object</option>
+                <option value="entity">Entity</option>
+                <option value="event">Event</option>
+                <option value="place">Place</option>
+            </select>
+
+            <br>
+
+            <select name="sub-sel1" id="type"> 
+                <option value="tlall">Threat Level: All</option>
+                <option value="object">Object</option>
+                <option value="entity">Entity</option>
+                <option value="event">Event</option>
+                <option value="place">Place</option>
+            </select>
+
+            <br>
+
+            <select name="sub-sel1" id="type"> 
+                <option value="sall">Status: All</option>
+                <option value="object">Object</option>
+                <option value="entity">Entity</option>
+                <option value="event">Event</option>
+                <option value="place">Place</option>
+            </select>
+
+            <br>
+
             <input type="submit" value="Submit">
+
         </form>
     </main>
 
