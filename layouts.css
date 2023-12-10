@@ -14,12 +14,25 @@ header{
     border: black;
 }
 
+.header-border{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-img{
+    margin:auto;
+}
+
 header nav ul{
     display: flex;
     list-style-type: none;
 }
 
 .search-container{
+    margin: auto;
     height: 35px;
     width: 225px;
     display: inline-flex;
@@ -100,7 +113,7 @@ footer a{
 .main-home{
     display: flex;
     min-height: calc(100vh - 265px);
-    width: 60%;
+    width: 70%;
     align-items: center;
     justify-content: space-evenly;
     margin: auto;
