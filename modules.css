@@ -190,8 +190,14 @@
 
 /* content for search options */
 .content-bottom-search{
-    padding: 200px 0;
     width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-top-search{
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -229,6 +235,13 @@
 }
 
 /* dropdown menu */
+
+.content-bottom-search select{
+    padding: 50px;
+    width: 100%;
+}
+
+
 .search-dropdown-first{
     width: 100%;
     margin-bottom: 20px;
@@ -354,7 +367,7 @@
 .bottomleft-container-contact ul li{  
     margin-bottom: 10px;
 }
-
+ 
 
 
 .bottomright-container-contact{

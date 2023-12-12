@@ -34,7 +34,8 @@
     </header>
 
     <main class="main-search">
-
+    
+    <div class="box-top-search">
         <div class="content-top-search">
             <h1>
                 Advanced Search
@@ -54,50 +55,41 @@
                 Filters:
             </p>
 
-            <div class="search-dropdown-first">
-                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Classification:
-                    <img src="images/arrowdown.png" alt="">
-                </button>
-                <ul class="search-dropdown-firstmenu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </ul>
-            </div>
+            <select name="sub-sel1" id="type" div="sub-sel-search"> 
+                <option value="tall">Type: All</option>
+                <option value="object">Object</option>
+                <option value="entity">Entity</option>
+                <option value="event">Event</option>
+                <option value="place">Place</option>
+            </select>
 
             <br>
 
-            <div class="search-dropdown-first">
-                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Type:
-                    <img src="images/arrowdown.png" alt="">
-                </button>
-                <ul class="search-dropdown-firstmenu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </ul>
-            </div>
-            
+            <select name="sub-sel1" id="type" div="sub-sel-search"> 
+                <option value="tlall">Threat Level: All</option>
+                <option value="object">Object</option>
+                <option value="entity">Entity</option>
+                <option value="event">Event</option>
+                <option value="place">Place</option>
+            </select>
+
             <br>
 
-            <div class="search-dropdown-first">
-                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Threat Level: 
-                    <img src="images/arrowdown.png" alt="">
-                </button>
-                <ul class="search-dropdown-firstmenu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </ul>
-            </div>
+            <select name="sub-sel1" id="type" div="sub-sel-search"> 
+                <option value="sall">Status: All</option>
+                <option value="object">Object</option>
+                <option value="entity">Entity</option>
+                <option value="event">Event</option>
+                <option value="place">Place</option>
+            </select>
 
-            <button class="search-submit-btn">
-                Submit
-            </button>
+            <br>
+
+            <input type="submit" value="Submit">
         </div>
+    </div>
+
+    
     </main>
 
     <footer>
