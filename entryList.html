@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="layouts.css">
     <link rel="stylesheet" href="modules.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
     <title>Entry List</title>
 </head>
+
 <body>
     <header>
 
@@ -24,7 +29,7 @@
             <div class="search-container">
                 <input class="searchBox" type="search" name="search" placeholder="Search...">
                 <img class="search-icon" src="images/searchicon.png" alt="search">
-            </div>  
+            </div>
         </div>
 
     </header>
@@ -42,7 +47,70 @@
     </header>
 
     <main class="main-entryList">
-        
+        <table id="example" class="table table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Classification</th>
+                    <th>Threat Level</th>
+                    <th>Status</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="entryTemplate.html">
+                            <div style="height:100%;width:100%">
+                              Cube
+                            </div>
+                        </a>
+                    </td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>Unknown</td>
+                </tr>
+                <tr>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>Contained</td>
+                </tr>
+                <tr>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>Contained</td>
+                </tr>
+                <tr>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>Exterminated</td>
+                </tr>
+                <tr>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>Free</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+
+                </tr>
+            </tfoot>
+        </table>
     </main>
 
 
@@ -52,7 +120,7 @@
             <a href="#" class="btn btn-info link" role="button">REPORT</a>
         </div>
 
-        
+
         <div class="footer-bottom">
             <a href="#">Feedback</a>
             <a href="privacy.html">Privacy</a>
@@ -60,5 +128,11 @@
             <a href="contactUs.html">Contact</a>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
+
 </html>

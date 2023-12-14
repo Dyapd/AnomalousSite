@@ -20,4 +20,9 @@ h1 {
     font-family: Oswald; font-size: 25px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 26.4px; 
 }
 
+table th:nth-child(3), td:nth-child(3) {
+    display: none;
+  }
+  
+
 
