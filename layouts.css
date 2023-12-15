@@ -40,6 +40,7 @@ header nav ul{
     display: inline-flex;
     border: 2px solid white;
     overflow: hidden;
+    
 }
 
 .search-icon {
@@ -50,6 +51,7 @@ header nav ul{
 }
 
 .searchBox{
+    outline: none;
     border: 0;
     flex: 1;
     color: white;

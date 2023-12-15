@@ -574,19 +574,23 @@
 
 .sec-rec{
     display: flex;
+    flex-wrap: wrap;
 }
 
 
 .inv-rec{
     display: none;
+    flex-wrap: wrap;
 }
 
 .con-rec{
     display: none;
+    flex-wrap: wrap;
 }
 
 .res-rec{
     display: none;
+    flex-wrap: wrap;
 }
 
 .active, .buttons-recruitment button:hover{
@@ -594,3 +598,20 @@
     color: white;
   }
 
+
+.image-recruitment{
+    width: 100%;
+}
+
+.button-con-rec{
+    width: 100%;
+}
+
+.btn-apply-rec{
+    padding: 50px;
+}
+
+.line-recruitment{
+    border: 1px solid black;
+    width: 100%;
+}
