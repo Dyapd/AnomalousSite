@@ -151,6 +151,14 @@ footer a{
     color: gray;
 }
 
+/* style for login moda; */
+
+.modal-content{
+    color: white;
+    background: rgb(61,70,51);
+    background: radial-gradient(circle, rgba(61,70,51,1) 0%, rgb(73, 87, 81) 100%);
+}
+
 
 
 
