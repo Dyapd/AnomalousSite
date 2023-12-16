@@ -151,10 +151,11 @@ footer a{
     color: gray;
 }
 
-/* style for login moda; */
+/* style for modals (popups) */
 
 
 .modal-content{
+    border: none;
     color: white;
     background: rgb(61,70,51);
     background-image: url("images/modalgreen.png");
@@ -246,7 +247,6 @@ footer a{
     flex-wrap: wrap;
     min-height: calc(100vh - 265px);
     width: 80%;
-    justify-content: center;
     margin: auto;
 }
 
@@ -306,13 +306,12 @@ footer a{
 
 /* style for entry list page */
 
-.main-entryList{
+.main-entryList{  
+    border: red solid;  
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
     min-height: calc(100vh - 265px);
     width: 80%;
+    justify-content: center;
     margin: auto;
 }
 

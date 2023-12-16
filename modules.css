@@ -615,3 +615,49 @@
     border: 1px solid black;
     width: 100%;
 }
+
+
+/* style for entry list page */
+
+.masterlist thead{
+   
+}
+
+.masterlist a{
+    text-decoration: none;
+}
+
+.masterlist p{
+    color: black;
+}
+
+.masterlist th:nth-child(1){
+    width: 500px;
+}
+
+tbody th{
+    text-align:right;
+    }
+
+th:nth-child(1){
+        width:250px;
+}
+
+/* styles for entry submission page */ 
+
+.entrysubmission-form{
+    display: flex;
+    flex-wrap: wrap;
+    border: red solid;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.entrysubmission-label{
+    width: 100%;
+}
+
+.selectmenu{
+    width: 100%;
+}

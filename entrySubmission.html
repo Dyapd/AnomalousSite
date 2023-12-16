@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="layouts.css">
     <link rel="stylesheet" href="modules.css">
@@ -34,56 +35,67 @@
     </header>
 
     <main class="main-entrysubmission">
+
+        <div class="container">
         <h1>
             Entry Submission
         </h1>
 
-        <form action="#">
+        <form action="#" class="entrysubmission-form">
             <br>
 
-            <label for="name">Name*</label> <br>
+            <label for="name" class="entrysubmission-label">Name*</label> <br>
             <input type="text"> <br>
-            <label for="anomalylocation">Anomaly Location*</label> <br>
+            <label for="anomalylocation" class="entrysubmission-label">Anomaly Location*</label> <br>
             <input type="text"> <br>
-            <label for="investigationtitle">Investigation Name (Title)*</label> <br>
+            <label for="investigationtitle" class="entrysubmission-label">Investigation Name (Title)*</label> <br>
             <input type="text"> <br>
-            <label for="report">Investigation Report*</label> <br>
+            <label for="report" class="entrysubmission-label">Investigation Report*</label> <br>
             <input type="text"> <br>
+            <label for="imgrep" class="entrysubmission-label">Photo</label>
             <input type="file" id="fileInput"> <br>   
 
-            <select name="sub-sel1" id="type"> 
-                <option value="tall">Type: All</option>
-                <option value="object">Object</option>
-                <option value="entity">Entity</option>
-                <option value="event">Event</option>
-                <option value="place">Place</option>
-            </select>
+            <div class="selectmenu">
+                <select name="sub-sel1" id="type"> 
+                    <option value="tall">Type: All</option>
+                    <option value="object">Object</option>
+                    <option value="entity">Entity</option>
+                    <option value="event">Event</option>
+                    <option value="place">Place</option>
+                </select>
+            </div>
 
             <br>
 
-            <select name="sub-sel1" id="type"> 
-                <option value="tlall">Threat Level: All</option>
-                <option value="object">Object</option>
-                <option value="entity">Entity</option>
-                <option value="event">Event</option>
-                <option value="place">Place</option>
-            </select>
+            <div class="selectmenu">
+                <select name="sub-sel1" id="type"> 
+                    <option value="tlall">Threat Level: All</option>
+                    <option value="object">Object</option>
+                    <option value="entity">Entity</option>
+                    <option value="event">Event</option>
+                    <option value="place">Place</option>
+                </select>
+            </div>
 
             <br>
 
-            <select name="sub-sel1" id="type"> 
-                <option value="sall">Status: All</option>
-                <option value="object">Object</option>
-                <option value="entity">Entity</option>
-                <option value="event">Event</option>
-                <option value="place">Place</option>
-            </select>
+            <div class="selectmenu">
+                <select name="sub-sel1" id="type"> 
+                    <option value="sall">Status: All</option>
+                    <option value="object">Object</option>
+                    <option value="entity">Entity</option>
+                    <option value="event">Event</option>
+                    <option value="place">Place</option>
+                </select>
+            </div>
 
             <br>
 
             <input type="submit" value="Submit">
 
         </form>
+
+    </div>
     </main>
 
     <footer>
