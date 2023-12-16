@@ -47,88 +47,90 @@
 
         <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                    <img src="#" alt="Logo">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="#" alt="Logo">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action=""> <!-- put php here -->
+                            <p>
+                            Username:
+                            </p>
+                            <input type="text" id="username "name="username">
+                            <p>
+                            Password:
+                            </p>
+                            <input type="text" id="password "name="password">
+                            
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </div>
+                
                 </div>
-                <div class="modal-body">
-                  <form action="">
-                    <p>
-                    Username:
-                    </p>
-                    <input type="text" id="username "name="username">
-                    <p>
-                    Password:
-                    </p>
-                    <input type="text" id="password "name="password">
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Login</button>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
 
-          <div class="modal fade" id="modal-feedback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modal-feedback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog"> 
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="#" alt="Logo">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Feedback</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action=""> <!-- put php here -->
+                            <p>
+                                Email Address(Optional):
+                            </p>
+                            <input type="text" id="emailad "name="emailad">
+                            <p>
+                                What did you notice about our website?/ Any ideas?:
+                            </p>
+                            <input type="text" id="feedback "name="feedback">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-report" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                  <div class="modal-header">
-                      <img src="#" alt="Logo">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form action="">
-                      <p>
-                      Email Address(Optional):
-                      </p>
-                      <input type="text" id="emailad "name="emailad">
-                      <p>
-                      What did you notice about our website?/ Any ideas?:
-                      </p>
-                      <input type="text" id="feedback "name="feedback">
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Submit</button>
-                  </div>
+                    <div class="modal-header">
+                        <img src="#" alt="Logo">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Report Anomaly</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action=""> <!-- put php here -->
+                            <p>
+                                What did you encounter?
+                            </p>
+                            <input type="text" id="what" name="what">
+                            <p>
+                                Where did you encounter it?
+                            </p>
+                            <input type="text" id="location" name="location">
+                            <p>
+                                When did you encouter it?
+                            </p>
+                            <input type="text" id="time" name="time">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Report</button>
+                    </div>
                 </div>
-              </div>
             </div>
-
-          <div class="modal fade" id="modal-report" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                      <img src="#" alt="Logo">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Report Anomaly</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form action="">
-                        <p>
-                        What did you encounter?
-                        </p>
-                        <input type="text" id="what" name="what">
-                        <p>
-                        Where did you encounter it?
-                        </p>
-                        <input type="text" id="location" name="location">
-                        <p>
-                        When did you encouter it?
-                        </p>
-                        <input type="text" id="time" name="time">
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Report</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
 
         <h1 class="warning-home">
             WARNING! BEWARE!: Most Dangerous Anomaly 

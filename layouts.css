@@ -153,14 +153,45 @@ footer a{
 
 /* style for login moda; */
 
+
 .modal-content{
     color: white;
     background: rgb(61,70,51);
-    background: radial-gradient(circle, rgba(61,70,51,1) 0%, rgb(73, 87, 81) 100%);
+    background-image: url("images/modalgreen.png");
+    background-size: 30%;
+    background-position: left top;
+    background-repeat: no-repeat, repeat;
+    display: flex; 
+    align-items: center;
 }
 
+.modal-body input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    background-color: #B5CB99;
+    border: none;
+}
 
+.modal-header{
+    align-self: normal;
+}
 
+.modal-title{
+    margin-left: auto;
+}
+
+.modal-footer{
+    align-self: normal;
+}
+
+.modal-footer button{
+    background-color: red;
+    border: none;
+    border-radius: 50px;
+    width: 100px;
+}
 
 
 
