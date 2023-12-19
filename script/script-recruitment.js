@@ -13,8 +13,6 @@ btn_sec.addEventListener('click', ()=>{
     content_inv.style.display='none';
     content_con.style.display='none';
     content_res.style.display='none';
-
-
 })
 
 btn_inv.addEventListener('click', ()=>{
@@ -22,7 +20,6 @@ btn_inv.addEventListener('click', ()=>{
     content_inv.style.display='flex';
     content_con.style.display='none';
     content_res.style.display='none';
-
 })
 
 btn_con.addEventListener('click', ()=>{

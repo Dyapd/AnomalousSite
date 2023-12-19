@@ -386,33 +386,47 @@
 
 /* style for contact us page */
 
-
 .top-container-contact{
+    text-align: center;
     width: 100%;
+}
+
+.left-container-contact{
+    width: 50%;
     justify-self: center;
     text-align: center;
 }
 
-.top-container-contact h1{
+.left-container-contact h1{
     width: 100%;
 }
 
-.top-container-contact h2{
+.left-container-contact h2{
     text-align: left;
     width: 100%;
     margin-top: 25px;
 }
 
-.top-container-contact p{
+.left-container-contact p{
     text-align: left;
     width: 100%;
+}
+
+.right-container-contact{
+    width: 50%;
+}
+
+.right-container-contact h2{
+    text-align: left;
+    width: 100%;
+    margin-top: 25px;
 }
 
 .bottomleft-container-contact{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    height: 250px;
     padding: 0 10px;
     width: 50%;
     background-color: #172E51;
@@ -436,6 +450,7 @@
     text-align: center;
     text-decoration: none;
     color: white;
+    margin-left: 50px;
 }
 
 
