@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- styles for table -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+    <!--  -->
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="layouts.css">
     <link rel="stylesheet" href="modules.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <title>
-        About Us
-    </title>
+
+    <title>Entry List</title>
 </head>
+
 <body>
     <header>
 
@@ -43,7 +48,7 @@
         </nav>
     </header>
 
-    <main class="main-about">
+    <main class="main-entryList">
 
         <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -53,7 +58,7 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" method="" id="logincred">
                         <form action=""> <!-- put php here -->
                             <p>
                             Username:
@@ -67,7 +72,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Login</button>
+                        <button type="button" class="btn btn-primary" form="logincred">Login</button>
                     </div>
                 
                 </div>
@@ -132,31 +137,34 @@
             </div>
         </div>
 
-        <div class="container-top-main-about">
-            <h1>
-                About Us
-            </h1>
-            <img src="#" alt="placeholder icon">
-            <br>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nobis possimus velit id eveniet sunt eius, repellendus facilis eligendi soluta? Rerum perspiciatis ea officia porro quidem maiores ut doloremque possimus?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa asperiores nemo temporibus doloribus atque similique, saepe ab recusandae eaque dicta nesciunt dolorem labore. Blanditiis ipsa reiciendis quas suscipit soluta.
-            </p>
-            <p>
-                <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nobis possimus velit id eveniet sunt eius, repellendus facilis eligendi soluta? Rerum perspiciatis ea officia porro quidem maiores ut doloremque possimus?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa asperiores nemo temporibus doloribus atque similique, saepe ab recusandae eaque dicta nesciunt dolorem labore. Blanditiis ipsa reiciendis quas suscipit soluta.
-            </p>
-        </div>
+        <table id="example" class="table table-hover table-bordered masterlist" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Classification</th>
+                    <th>Threat Level</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="entryTemplate.html">
+                            <p>
+                                Cube
+                            </p>
+                        </a>
+                    </td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>Unknown</td>
+                </tr>
+               
+            </tbody>
+        </table>
         
-        <div class="container-bottom-main-about">
-            <h1>
-                Purpose of this Website
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, optio maiores obcaecati in ad vel ipsam nesciunt cumque dolorum commodi fugiat totam accusamus laboriosam sit ullam nihil libero sunt aut!
-            </p>
-        </div>
     </main>
+
 
     <footer>
         <div class="footer-top">
@@ -172,7 +180,12 @@
             <a href="contactUs.html">Contact</a>
         </div>
     </footer>
-    
+
     <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
+
 </html>
