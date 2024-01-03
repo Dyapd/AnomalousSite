@@ -663,7 +663,6 @@ th:nth-child(1){
 .entrysubmission-form{
     display: flex;
     flex-wrap: wrap;
-    border: red solid;
     justify-content: center;
     width: 100%;
 
