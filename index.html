@@ -81,7 +81,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action=""> <!-- put php here -->
+                        <form id="feedbackform" action="database/feedback.php" method="post"> <!-- put php here -->
                             <p>
                                 Email Address(Optional):
                             </p>
@@ -90,11 +90,10 @@
                                 What did you notice about our website?/ Any ideas?:
                             </p>
                             <input type="text" id="feedback "name="feedback">
-                            
-                        </form>
+                        </form> 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Report</button>
+                        <button form="feedbackform" class="btn btn-primary">Report</button>
                     </div>
                 </div>
             </div>
@@ -109,7 +108,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action=""> <!-- put php here -->
+                        <form id="reportform" action="database/report.php" method="post"> <!-- put php here -->
                             <p>
                                 What did you encounter?
                             </p>
@@ -125,7 +124,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Report</button>
+                        <button class="btn btn-primary" form="reportform">Report</button>
                     </div>
                 </div>
             </div>
