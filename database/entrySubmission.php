@@ -1,8 +1,15 @@
-<!-- <?php
-  $entryName = $_POST['entryName'];
-  $anomLocation = $_POST['anomLocation'];
+ <?php
+
+
+
+  $name = $_POST['name'];
+  $location = $_POST['location'];
   $title = $_POST['title'];
-  $investiRep = $_POST['investiRep'];
+  $report = $_POST['report'];
+  $type = $_POST['type']; 
+  $threat = $_POST['threat'];
+  $status = $_POST['status'];
+
 
   $con = new mysqli("localhost", "root", "", "sdpdatabase");
   if($con->connect_error) 
@@ -11,19 +18,15 @@
   }
   else 
   {
-    $stmt = $con->prepare("insert into registration(entryName, anomLocation, title, investiRep) values (?, ?, ?, ?)");
-    $stmt->bind_param("ssss", $entryName, $anomLocation, $title, $investiRep);
+    $stmt = $con->prepare("INSERT INTO entrysubdb(name, location, title, report, type, threat, status) values (?, ?, ?, ?, ?, ?, ?)");
+
+    $stmt->bind_param("sssssss", $name, $location, $title, $report, $type, $threat, $status);
     $stmt->execute();
     echo "Submission sent!";
     $stmt->close();
     $con->close();
   }
-?> -->
+
+?> 
 
 
-<?php 
-
-print_r($_POST);
-
-
-?>

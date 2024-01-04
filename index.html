@@ -53,21 +53,20 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <form action="login.php" method="post"> <!-- put php here -->
+                    <div class="modal-body"> 
+                        <form id="loginform" action="database/login.php" method="post"> <!-- put php here -->
                             <p>
                             Username:
                             </p>
-                            <input type="text" id="username "name="username">
+                            <input type="text" id="username" name="username">
                             <p>
                             Password:
                             </p>
-                            <input type="text" id="password "name="password">
-                            
+                            <input type="text" id="password" name="password">
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Login</button>
+                        <button type="button" class="btn btn-primary" form="loginform">Login</button>
                     </div>
                 </div>
             </div>

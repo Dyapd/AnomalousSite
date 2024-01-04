@@ -41,26 +41,26 @@
             Entry Submission
         </h1>
 
-        <form action="database/entrySubmission.php" class="entrysubmission-form" enctype="multipart/form-data">
+        <form action="database/entrySubmission.php" class="entrysubmission-form" method="post" enctype="multipart/form-data">
             <br>
 
             <label for="name" class="menu-form">Name*:</label> <br>
-            <input type="text" class="textFields-form"> <br>
+            <input type="text" class="textFields-form" name="name"> <br>
 
             <label for="anomalylocation" class="menu-form">Anomaly Location*:</label> <br>
-            <input type="text" class="textFields-form"> <br>
+            <input type="text" class="textFields-form" name="location"> <br>
 
             <label for="investigationtitle" class="menu-form">Investigation Name (Title)*:</label> <br>
-            <input type="text" class="textFields-form"> <br>
+            <input type="text" class="textFields-form" name="title"> <br>
 
             <label for="report" class="menu-form">Investigation Report*:</label> <br>
-            <textarea name="report" id="report" rows="10" class="textFields-form"></textarea> <br>
+            <textarea name="report" id="report" rows="10" class="textFields-form" name="report"></textarea> <br>
 
             <label for="imgrep" class="menu-form">Photo:</label>
-            <input type="file" id="fileInput" class="inImg-form"> <br>   
+            <input type="file" id="fileInput" class="inImg-form" name="img"> <br>   
 
             <div class="selectmenu" class="menu-form">
-                <select name="sub-sel1" id="type" class="menu-form"> 
+                <select name="type" id="type" class="menu-form" > 
                     <option value="Object">Type: Object</option>
                     <option value="Entity">Type: Entity</option>
                     <option value="Event">Type: Event</option>
@@ -71,7 +71,7 @@
             <br>
 
             <div class="selectmenu" >
-                <select name="sub-sel1" id="threatLevel" class="menu-form"> 
+                <select name="threat" id="threatLevel" class="menu-form"> 
                     <option value="Vicinity">Threat Level: Vicinity</option>
                     <option value="Local">Threat Level: Local</option>
                     <option value="Regional">Threat Level: Regional</option>
@@ -83,7 +83,7 @@
             <br>
 
             <div class="selectmenu">
-                <select name="sub-sel1" id="status" class="menu-form"> 
+                <select name="status" id="status" class="menu-form"> 
                     <option value="Unknown">Status: Unknown</option>
                     <option value="Secured">Status: Secured</option>
                     <option value="Cooperative">Status: Cooperative</option>
