@@ -10,7 +10,7 @@
   }
   else 
   {
-    $stmt = $con->prepare("select * from registration where email= ?");
+    $stmt = $con->prepare("select * from userdb where username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
     $stmt_result = $stmt->get_result();
@@ -19,7 +19,7 @@
       $data = $stmt_result->fetch_assoc();
       if($data['password'] === $password)
       {
-        echo "<h2>Login Successful</h2>";
+        header("Location:../index copy.html");
       }
       else
       {
