@@ -41,58 +41,61 @@
             Entry Submission
         </h1>
 
-        <form action="#" class="entrysubmission-form">
+        <form action="database/entrySubmission.php" class="entrysubmission-form" enctype="multipart/form-data">
             <br>
 
-            <label for="name" class="entrysubmission-label">Name*</label> <br>
-            <input type="text"> <br>
-            <label for="anomalylocation" class="entrysubmission-label">Anomaly Location*</label> <br>
-            <input type="text"> <br>
-            <label for="investigationtitle" class="entrysubmission-label">Investigation Name (Title)*</label> <br>
-            <input type="text"> <br>
-            <label for="report" class="entrysubmission-label">Investigation Report*</label> <br>
-            <textarea name="" id="report" cols="120" rows="10"></textarea> <br>
-            <label for="imgrep" class="entrysubmission-label">Photo</label>
-            <input type="file" id="fileInput"> <br>   
+            <label for="name" class="menu-form">Name*:</label> <br>
+            <input type="text" class="textFields-form"> <br>
 
-            <div class="selectmenu">
-                <select name="sub-sel1" id="type"> 
-                    <option value="tall">Type: All</option>
-                    <option value="object">Object</option>
-                    <option value="entity">Entity</option>
-                    <option value="event">Event</option>
-                    <option value="place">Place</option>
+            <label for="anomalylocation" class="menu-form">Anomaly Location*:</label> <br>
+            <input type="text" class="textFields-form"> <br>
+
+            <label for="investigationtitle" class="menu-form">Investigation Name (Title)*:</label> <br>
+            <input type="text" class="textFields-form"> <br>
+
+            <label for="report" class="menu-form">Investigation Report*:</label> <br>
+            <textarea name="report" id="report" rows="10" class="textFields-form"></textarea> <br>
+
+            <label for="imgrep" class="menu-form">Photo:</label>
+            <input type="file" id="fileInput" class="inImg-form"> <br>   
+
+            <div class="selectmenu" class="menu-form">
+                <select name="sub-sel1" id="type" class="menu-form"> 
+                    <option value="Object">Type: Object</option>
+                    <option value="Entity">Type: Entity</option>
+                    <option value="Event">Type: Event</option>
+                    <option value="Place">Type: Place</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="selectmenu" >
+                <select name="sub-sel1" id="threatLevel" class="menu-form"> 
+                    <option value="Vicinity">Threat Level: Vicinity</option>
+                    <option value="Local">Threat Level: Local</option>
+                    <option value="Regional">Threat Level: Regional</option>
+                    <option value="Continental">Threat Level: Continental</option>
+                    <option value="Global">Threat Level: Global</option>
                 </select>
             </div>
 
             <br>
 
             <div class="selectmenu">
-                <select name="sub-sel1" id="type"> 
-                    <option value="tlall">Threat Level: All</option>
-                    <option value="object">Object</option>
-                    <option value="entity">Entity</option>
-                    <option value="event">Event</option>
-                    <option value="place">Place</option>
+                <select name="sub-sel1" id="status" class="menu-form"> 
+                    <option value="Unknown">Status: Unknown</option>
+                    <option value="Secured">Status: Secured</option>
+                    <option value="Cooperative">Status: Cooperative</option>
+                    <option value="Terminated">Status: Terminated</option>
                 </select>
             </div>
 
             <br>
 
-            <div class="selectmenu">
-                <select name="sub-sel1" id="type"> 
-                    <option value="sall">Status: All</option>
-                    <option value="object">Object</option>
-                    <option value="entity">Entity</option>
-                    <option value="event">Event</option>
-                    <option value="place">Place</option>
-                </select>
-            </div>
-
-            <br>
-
-            <input type="submit" value="Submit">
-
+            <button class="btn btn-primary">
+                Submit
+            </button>
         </form>
 
     </div>

@@ -668,10 +668,30 @@ th:nth-child(1){
 
 }
 
-.entrysubmission-label{
+.selectmenu{
     width: 100%;
 }
 
-.selectmenu{
+.textFields-form{
     width: 100%;
+}
+
+.menu-form{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.inImg-form{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.btnSubmit-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btnSubmit-form button{
+    text-align: left;
 }
