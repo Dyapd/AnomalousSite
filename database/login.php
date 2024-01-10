@@ -10,7 +10,7 @@
   }
   else 
   {
-    $stmt = $con->prepare("select * from userdb where username = ?");
+    $stmt = $con->prepare("SELECT * from userdb where username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
     $stmt_result = $stmt->get_result();

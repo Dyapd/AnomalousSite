@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layouts.css">
+    <link rel="stylesheet" href="modules.css">
+    <title>
+        Entry Template
+    </title>
+</head>
+<body>
+    <header>
+        <div class="logo-img">
+            <a href="index.html">
+                <img src="images/placeholdericon.png" alt="Logo" width="75px">
+            </a>
+        </div>
+        <div class="search-container">
+            <input class="searchBox" type="search" name="search" placeholder="Search...">
+            <img class="search-icon" src="images/searchicon.png" alt="search">
+        </div>  
+    </header>
+
+    <header class="header-bottomshape">
+        <nav>
+            <ul>
+                <li>
+                    <a href="aboutUs.html">About</a>
+                    <a href="contactUs.html">Contact</a>
+                    <a href="faq.html">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-entry">
+        
+        <div class="content-top-entrytem">
+            <h1>Entry X</h1>
+        </div>
+
+        <div class="content-left-entrytem">
+            <h2>Name:</h2>
+            <p>Cube</p>
+
+            <h2>Classification:</h2>
+            <p>Object</p>
+
+            <h2>Threat Level:</h2>
+            <p>Doccilus</p>
+        </div>
+
+        <div class="content-right-entrytem">
+            <img src="images/SameCube.png" alt="entryimage" >
+        </div>
+
+        
+
+        <div class="content-bottom-entrytem">
+            <h4>
+                Description:
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur neque error atque architecto ab animi, quasi aperiam repudiandae repellendus provident accusamus esse adipisci ullam laboriosam et facere aliquid expedita rerum.
+            </p>
+            
+            <div class="entry-line"> 
+
+            </div>
+
+            <h4>
+                <br>Findings:
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur neque error atque architecto ab animi, quasi aperiam repudiandae repellendus provident accusamus esse adipisci ullam laboriosam et facere aliquid expedita rerum.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="">Feedback</a>
+        <a href="termsAndAgreements.html">Terms and Agreements</a>
+        <a href="privacy.html">Privacy</a>
+    </footer>
+</body>
+</html>

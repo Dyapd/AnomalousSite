@@ -1,12 +1,14 @@
 <?php
 
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    define('DB_SERVER', 'localhost');
+    define('DB_USERNAME', 'root');
+    define('DB_PASSWORD', '');
+    define('DB_NAME', 'sdpdatabase');
 
+    $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
-    $conn = new mysqli("localhost", "root", "", "sdpdatabase");
-    $query = "";
-    $result1 = mysqli_query($connect, query);
+    $query = "SELECT * FROM `entrysubdb`";
+    $result = mysqli_query($conn, $query);
 
 
 ?>
@@ -161,11 +163,14 @@
                 </tr>
             </thead>
             <tbody>
-                <?php while ($row1 = mysqli_fetch_array($result1)):; ?>
-                <td><?php echo $row1[2];?></td>
-                <td><?php echo $row1[4];?></td>
-                <td><?php echo $row1[5];?></td>
-                <td><?php echo $row1[6];?></td>
+                <tr>
+                    <?php while($row = mysqli_fetch_array($result)):; ?>
+                    <td><a href="entryTemplate.php?id=<?php echo $row['id'];?>"> <?php echo $row[3];?> </a> </td>
+                    <td><?php echo $row[5];?></td>
+                    <td><?php echo $row[6];?></td>  
+                    <td><?php echo $row[7];?></td>
+                </tr>
+                <?php endwhile;?>
             </tbody>
         </table>
         
@@ -192,6 +197,6 @@
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
     <script src="script/script.js"></script>
+    
 </body>
-
 </html>
