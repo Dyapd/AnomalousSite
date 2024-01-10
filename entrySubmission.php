@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,27 +43,26 @@
         <h1>
             Entry Submission
         </h1>
-        <form name="entryForm" action="database/entrySubmission.php" class="entrysubmission-form" method="post" enctype="multipart/form-data"
-        onsubmit="return entryValidation()" required>    
+        <form action="#" class="entrysubmission-form" method="post" enctype="multipart/form-data">
             <br>
 
             <label for="name" class="menu-form">Name*:</label> <br>
-            <input type="text" class="textFields-form" name="name" required> <br>
+            <input type="text" class="textFields-form" name="name"> <br>
 
             <label for="anomalylocation" class="menu-form">Anomaly Location*:</label> <br>
-            <input type="text" class="textFields-form" name="location" required> <br>
+            <input type="text" class="textFields-form" name="location"> <br>
 
             <label for="investigationtitle" class="menu-form">Investigation Name (Title)*:</label> <br>
-            <input type="text" class="textFields-form" name="title" required> <br>
+            <input type="text" class="textFields-form" name="title"> <br>
 
             <label for="report" class="menu-form">Investigation Report*:</label> <br>
-            <textarea name="report" id="report" rows="10" class="textFields-form" name="report" required></textarea> <br>
+            <textarea name="report" id="report" rows="10" class="textFields-form" name="report"></textarea> <br>
 
             <label for="imgrep" class="menu-form">Photo:</label>
             <input type="file" id="fileInput" class="inImg-form" name="img" accept=".jpg, .jpeg, .png"> <br>   
 
             <div class="selectmenu" class="menu-form">
-                <select name="type" id="type" class="menu-form" required > 
+                <select name="type" id="type" class="menu-form" > 
                     <option value="Object">Type: Object</option>
                     <option value="Entity">Type: Entity</option>
                     <option value="Event">Type: Event</option>
@@ -71,7 +73,7 @@
             <br>
 
             <div class="selectmenu" >
-                <select name="threat" id="threatLevel" class="menu-form" required> 
+                <select name="threat" id="threatLevel" class="menu-form"> 
                     <option value="Vicinity">Threat Level: Vicinity</option>
                     <option value="Local">Threat Level: Local</option>
                     <option value="Regional">Threat Level: Regional</option>
@@ -83,7 +85,7 @@
             <br>
 
             <div class="selectmenu">
-                <select name="status" id="status" class="menu-form" required> 
+                <select name="status" id="status" class="menu-form"> 
                     <option value="Unknown">Status: Unknown</option>
                     <option value="Secured">Status: Secured</option>
                     <option value="Cooperative">Status: Cooperative</option>
@@ -107,7 +109,6 @@
         <a href="privacy.html">Privacy</a>
     </footer>
 
-    <script src="js/bootstrap.js"></script>
-    <script src="script/entryValidation.js"> </script>
+    
 </body>
 </html>

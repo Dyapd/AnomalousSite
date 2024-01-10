@@ -189,7 +189,7 @@
 }
 
 
-/* styles for main-entry */
+/* styles for entry Template */
 
 .content-top-entrytem{
     text-align: center;
@@ -219,6 +219,7 @@
 
 .content-bottom-entrytem{
     font-family: Oswald;
+    
 }
 
 /* styles for about us */

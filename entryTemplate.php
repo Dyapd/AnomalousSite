@@ -1,11 +1,19 @@
+<?php
+    include "database/functions.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="layouts.css">
     <link rel="stylesheet" href="modules.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>
         Entry Template
     </title>
@@ -36,47 +44,49 @@
     </header>
 
     <main class="main-entry">
+
+    <?php foreach($query as $q): ?>
         
         <div class="content-top-entrytem">
-            <h1>Entry X</h1>
+            <h1>Entry <?php echo $q['id']?> </h1>
         </div>
 
         <div class="content-left-entrytem">
             <h2>Name:</h2>
-            <p>Cube</p>
+            <p> <?php echo $q['title']?> </p>
 
             <h2>Classification:</h2>
-            <p>Object</p>
+            <p> <?php echo $q['type']?> </p>
 
             <h2>Threat Level:</h2>
-            <p>Doccilus</p>
+            <p> <?php echo $q['threat']?> </p>
         </div>
 
         <div class="content-right-entrytem">
-            <img src="images/SameCube.png" alt="entryimage" >
+            <img src="images/SameCube.png" alt="Image Unavailable" >
         </div>
 
         
 
         <div class="content-bottom-entrytem">
+            <br>
+            <br>
+            
+
             <h4>
                 Description:
             </h4>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur neque error atque architecto ab animi, quasi aperiam repudiandae repellendus provident accusamus esse adipisci ullam laboriosam et facere aliquid expedita rerum.
+                <?php echo $q['report']?>
             </p>
             
             <div class="entry-line"> 
 
-            </div>
-
-            <h4>
-                <br>Findings:
-            </h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur neque error atque architecto ab animi, quasi aperiam repudiandae repellendus provident accusamus esse adipisci ullam laboriosam et facere aliquid expedita rerum.
-            </p>
         </div>
+            
+        </div>
+
+        <?php endforeach; ?>
     </main>
 
     <footer>
@@ -84,5 +94,8 @@
         <a href="termsAndAgreements.html">Terms and Agreements</a>
         <a href="privacy.html">Privacy</a>
     </footer>
+
+
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>

@@ -18,11 +18,9 @@
     $stmt = $con->prepare("INSERT INTO entrysubdb(name, location, title, report, type, threat, status) values (?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("sssssss", $name, $location, $title, $report, $type, $threat, $status);
     $stmt->execute();
-    echo "Submission sent!";
+    
     $stmt->close();
     $con->close();
   }
 
 ?> 
-
-
