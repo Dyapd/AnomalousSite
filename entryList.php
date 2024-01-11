@@ -182,8 +182,11 @@
             <a href="recruitment.html" class="btn btn-info link" role="button">RECRUITMENT</a>
             <a href="#" class="btn btn-info link" role="button" data-bs-toggle="modal" data-bs-target="#modal-report">REPORT</a>
         </div>
+ 
+        <div class="footer-bottom-left">
+            <a href="history.html">History</a>
+        </div>
 
-        
         <div class="footer-bottom">
             <a href="#" data-bs-toggle="modal" data-bs-target="#modal-feedback">Feedback</a>
             <a href="privacy.html">Privacy</a>
