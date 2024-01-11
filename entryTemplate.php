@@ -45,6 +45,7 @@
 
     <main class="main-entry">
 
+    
     <?php foreach($query as $q): ?>
         
         <div class="content-top-entrytem">
