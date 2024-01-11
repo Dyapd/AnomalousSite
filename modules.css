@@ -203,11 +203,13 @@
 
 .content-right-entrytem{
     width: 50%;
+    height: 30%;
     border: 2px solid black;
 }
 
 .content-right-entrytem img{
     width: 100%;
+    height: 10000px;
 }
 .entry-line{
     width: 100%;

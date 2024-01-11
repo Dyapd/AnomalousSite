@@ -3,6 +3,7 @@
 
 
   $con = new mysqli("localhost", "root", "", "sdpdatabase");
+  $pic_uploaded = 0;
   if($con->connect_error) 
   {
     die("Failed to connect : ".$con->connect_error);
@@ -16,43 +17,56 @@
     $type = $_POST['type']; 
     $threat = $_POST['threat'];
     $status = $_POST['status'];
+    $image = $_FILES["img"]['name'];
 
-    $image = $_FILES["img"]['name']
-
-    $stmt = $con->prepare("INSERT INTO entrysubdb(name, location, title, report, type, threat, status) values (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssss", $name, $location, $title, $report, $type, $threat, $status);
-    $stmt->execute();
+    if(move_uploaded_file($_FILES['img']['tmp_name'], $_SERVER['DOCUMENT_ROOT']. '/AnomalousSite/images/'. $image))
+    {
+      $target_file = $_SERVER['DOCUMENT_ROOT']. '/AnomalousSite/images/'. $image;
+      $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+      $picname = basename($_FILES['img']['name']);
+      $photo = time().$picname;
+      if($imageFileType != "jpeg" && $imageFileType != "jpg" && $imageFileType != "png" )
+      { 
+        ?>
+          <script>
+            alert("Please upload proper photo extension .jpg/jpeg/png");
+          </script>
+        <?php
+      }
+      else if($_FILES["img"]['size'] > 20000000)
+      {
+        ?>
+          <script>
+            alert("Your photo exceeded the size limit (2 MB)");
+          </script>
+        <?php
+      } 
+      else 
+      {
+        $pic_uploaded = 1;
+      }
+    }
     
-    $stmt->close();
-    $con->close();
+    if ($pic_uploaded == 1)
+    {
+      $stmt = $con->prepare("INSERT INTO entrysubdb(name, location, title, report, type, threat, status, image) values (?, ?, ?, ?, ?, ?, ?, ?)");
+      $stmt->bind_param("ssssssss", $name, $location, $title, $report, $type, $threat, $status, $image);
+      $stmt->execute();
+      
+      $stmt->close();
+      $con->close();
+
+    }
+    else 
+    {
+      ?>
+          <script>
+            alert("Photo Not Uploaded...");
+          </script>
+        <?php
+    }
   }
 
 ?> 
 
-<!-- <?php
-  $name = $_POST['name'];
-  $location = $_POST['location'];
-  $title = $_POST['title'];
-  $report = $_POST['report'];
-  $type = $_POST['type']; 
-  $threat = $_POST['threat'];
-  $status = $_POST['status'];
-
-
-  $con = new mysqli("localhost", "root", "", "sdpdatabase");
-  if($con->connect_error) 
-  {
-    die("Failed to connect : ".$con->connect_error);
-  }
-  else 
-  {
-    $stmt = $con->prepare("INSERT INTO entrysubdb(name, location, title, report, type, threat, status) values (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssss", $name, $location, $title, $report, $type, $threat, $status);
-    $stmt->execute();
-    
-    $stmt->close();
-    $con->close();
-  }
-
-?>  -->
 

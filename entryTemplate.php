@@ -63,7 +63,7 @@
         </div>
 
         <div class="content-right-entrytem">
-            <img src="images/SameCube.png" alt="Image Unavailable" >
+            <img src="images/<?php echo $q['image']?>" alt="Image Unavailable" >
         </div>
 
         
