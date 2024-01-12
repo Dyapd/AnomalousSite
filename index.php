@@ -1,7 +1,7 @@
-
-
-
-
+<?php
+    include "database/feedback.php";
+    
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -95,7 +95,7 @@
                         </form> 
                     </div>
                     <div class="modal-footer">
-                        <button form="feedbackform" class="btn btn-primary">Report</button>
+                        <button form="feedbackform" class="btn btn-primary" name="">Submit</button>
                     </div>
                 </div>
             </div>
@@ -321,6 +321,7 @@
 
 
     <script src="js/bootstrap.js"></script>
+    <script src=""></script>
 </body>
 
 </html>
