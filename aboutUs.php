@@ -24,7 +24,7 @@
 
         <div class="header-border">
             <div class="logo-img">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="images/placeholdericon.png" alt="Logo" width="75px">
                 </a>
             </div>
@@ -59,34 +59,35 @@
 
     <main class="main-about">
 
-        <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <img src="#" alt="Logo">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- check if session is empty (not logged in)  -->
+        <?php if(empty($_SESSION)) : ?>
+            <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="#" alt="Logo">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"> 
+                            <form id="loginform" action="database/login.php" method="post"> <!-- put php here -->
+                                <p>
+                                Username:
+                                </p>
+                                <input type="text" id="username" name="username">
+                                <p>
+                                Password:
+                                </p>
+                                <input type="text" id="password" name="password">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" form="loginform" name="login">Login</button>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <form action=""> <!-- put php here -->
-                            <p>
-                            Username:
-                            </p>
-                            <input type="text" id="username "name="username">
-                            <p>
-                            Password:
-                            </p>
-                            <input type="text" id="password "name="password">
-                            
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Login</button>
-                    </div>
-                
                 </div>
             </div>
-        </div>
+        <?php endif ?>
 
         <div class="modal fade" id="modal-feedback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog"> 
@@ -174,19 +175,19 @@
 
     <footer>
         <div class="footer-top">
-            <a href="recruitment.html" class="btn btn-info link" role="button">RECRUITMENT</a>
+            <a href="recruitment.php" class="btn btn-info link" role="button">RECRUITMENT</a>
             <a href="#" class="btn btn-info link" role="button" data-bs-toggle="modal" data-bs-target="#modal-report">REPORT</a>
         </div>
  
         <div class="footer-bottom-left">
-            <a href="history.html">History</a>
+            <a href="history.php">History</a>
         </div>
 
         <div class="footer-bottom">
             <a href="#" data-bs-toggle="modal" data-bs-target="#modal-feedback">Feedback</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="termsAndAgreements.html">Terms and Agreements</a>
-            <a href="contactUs.html">Contact</a>
+            <a href="privacy.php">Privacy</a>
+            <a href="termsAndAgreements.php">Terms and Agreements</a>
+            <a href="contactUs.php">Contact</a>
         </div>
     </footer>
     
