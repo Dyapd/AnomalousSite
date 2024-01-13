@@ -18,6 +18,7 @@
     $threat = $_POST['threat'];
     $status = $_POST['status'];
     $image = $_FILES["img"]['name'];
+    $entryName = $_POST['entryName'];
 
     if(move_uploaded_file($_FILES['img']['tmp_name'], $_SERVER['DOCUMENT_ROOT']. '/AnomalousSite/images/'. $image))
     {
@@ -49,8 +50,8 @@
     
     if ($pic_uploaded == 1)
     {
-      $stmt = $con->prepare("INSERT INTO entrysubdb(name, location, title, report, type, threat, status, image) values (?, ?, ?, ?, ?, ?, ?, ?)");
-      $stmt->bind_param("ssssssss", $name, $location, $title, $report, $type, $threat, $status, $image);
+      $stmt = $con->prepare("INSERT INTO entrysubdb(name, location, title, report, type, threat, status, image, entryName) values (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+      $stmt->bind_param("sssssssss", $name, $location, $title, $report, $type, $threat, $status, $image, $entryName);
       $stmt->execute();
       
       $stmt->close();

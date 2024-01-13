@@ -1,3 +1,8 @@
+<?php
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,9 +31,18 @@
         <nav>
             <ul>
                 <li>
-                    <a href="aboutUs.html">About</a>
-                    <a href="contactUs.html">Contact</a>
-                    <a href="faq.html">FAQ</a>
+                    <a href="aboutUs.php">About</a>
+                    <a href="entryList.php">Entry List</a>
+
+                    <?php if(empty($_SESSION)) : ?> <!-- check if session is empty -->
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a>
+                    <?php endif ?>
+
+                    <!-- check if session has loggedon set if so then is logged in -->
+                    <?php if(isset($_SESSION['loggedon'])) : ?>
+                        <a href="database/logout.php" >Signout</a>
+                        <a href="entrySubmission.php">Submit Entry</a>
+                    <?php endif ?>
                 </li>
             </ul>
         </nav>
@@ -44,7 +58,7 @@
          required>    
             <br>
 
-            <label for="name" class="menu-form">Name*:</label> <br>
+            <label for="name" class="menu-form">Author Name*:</label> <br>
             <input type="text" class="textFields-form" name="name" required> <br>
 
             <label for="anomalylocation" class="menu-form">Anomaly Location*:</label> <br>
@@ -52,6 +66,9 @@
 
             <label for="investigationtitle" class="menu-form">Investigation Name (Title)*:</label> <br>
             <input type="text" class="textFields-form" name="title" required> <br>
+
+            <label for="entryName" class="menu-form">Investigation Entry Number (EN-001/EV-001/PL-001/OB-001)*:</label> <br>
+            <input type="text" class="textFields-form" name="entryName" required> <br>
 
             <label for="report" class="menu-form">Investigation Report*:</label> <br>
             <textarea name="report" id="report" rows="10" class="textFields-form" name="report" required></textarea> <br>

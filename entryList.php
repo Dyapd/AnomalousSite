@@ -1,4 +1,9 @@
 <?php
+    session_start();
+
+?>
+
+<?php
 
     define('DB_SERVER', 'localhost');
     define('DB_USERNAME', 'root');
@@ -52,13 +57,22 @@
 
     </header>
 
-    <header class="header-bottomshape">
+   <header class="header-bottomshape">
         <nav>
             <ul>
                 <li>
-                    <a href="aboutUs.html">About</a>
-                    <a href="entryList.html">Entry List</a>
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a>
+                    <a href="aboutUs.php">About</a>
+                    <a href="entryList.php">Entry List</a>
+
+                    <?php if(empty($_SESSION)) : ?> <!-- check if session is empty -->
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a>
+                    <?php endif ?>
+
+                    <!-- check if session has loggedon set if so then is logged in -->
+                    <?php if(isset($_SESSION['loggedon'])) : ?>
+                        <a href="database/logout.php" >Signout</a>
+                        <a href="entrySubmission.php">Submit Entry</a>
+                    <?php endif ?>
                 </li>
             </ul>
         </nav>
@@ -157,6 +171,7 @@
             <thead>
                 <tr>
                     <th>Name</th>
+                    <th>Entry No.</th>
                     <th>Classification</th>
                     <th>Threat Level</th>
                     <th>Status</th>
@@ -166,6 +181,7 @@
                 <tr>
                     <?php while($row = mysqli_fetch_array($result)):; ?>
                     <td><a href="entryTemplate.php?id=<?php echo $row['id'];?>"> <?php echo $row[3];?> </a> </td>
+                    <td><?php echo $row[9];?></td>
                     <td><?php echo $row[5];?></td>
                     <td><?php echo $row[6];?></td>  
                     <td><?php echo $row[7];?></td>

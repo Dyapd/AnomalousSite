@@ -1,4 +1,9 @@
 <?php
+    session_start();
+
+?>
+
+<?php
     include "database/functions.php";
 ?>
 
@@ -35,9 +40,18 @@
         <nav>
             <ul>
                 <li>
-                    <a href="aboutUs.html">About</a>
-                    <a href="contactUs.html">Contact</a>
-                    <a href="faq.html">FAQ</a>
+                    <a href="aboutUs.php">About</a>
+                    <a href="entryList.php">Entry List</a>
+
+                    <?php if(empty($_SESSION)) : ?> <!-- check if session is empty -->
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a>
+                    <?php endif ?>
+
+                    <!-- check if session has loggedon set if so then is logged in -->
+                    <?php if(isset($_SESSION['loggedon'])) : ?>
+                        <a href="database/logout.php" >Signout</a>
+                        <a href="entrySubmission.php">Submit Entry</a>
+                    <?php endif ?>
                 </li>
             </ul>
         </nav>
@@ -49,7 +63,7 @@
     <?php foreach($query as $q): ?>
         
         <div class="content-top-entrytem">
-            <h1>Entry <?php echo $q['id']?> </h1>
+            <h1><?php echo $q['entryName']?> </h1>
         </div>
 
         <div class="content-left-entrytem">

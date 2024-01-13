@@ -1,3 +1,8 @@
+<?php
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,9 +40,18 @@
         <nav>
             <ul>
                 <li>
-                    <a href="aboutUs.html">About</a>
-                    <a href="entryList.html">Entry List</a>
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a>
+                    <a href="aboutUs.php">About</a>
+                    <a href="entryList.php">Entry List</a>
+
+                    <?php if(empty($_SESSION)) : ?> <!-- check if session is empty -->
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a>
+                    <?php endif ?>
+
+                    <!-- check if session has loggedon set if so then is logged in -->
+                    <?php if(isset($_SESSION['loggedon'])) : ?>
+                        <a href="database/logout.php" >Signout</a>
+                        <a href="entrySubmission.php">Submit Entry</a>
+                    <?php endif ?>
                 </li>
             </ul>
         </nav>

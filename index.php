@@ -24,7 +24,7 @@
 
         <div class="header-border">
             <div class="logo-img">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="images/placeholdericon.png" alt="Logo" width="75px">
                 </a>
             </div>
@@ -37,17 +37,31 @@
         <nav>
             <ul>
                 <li>
-                    <a href="aboutUs.html">About</a>
+                    <a href="aboutUs.php">About</a>
                     <a href="entryList.php">Entry List</a>
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a>
+
+                    <?php if(empty($_SESSION)) : ?> <!-- check if session is empty -->
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a>
+                    <?php endif ?>
+
+                    <!-- check if session has loggedon set if so then is logged in -->
+                    <?php if(isset($_SESSION['loggedon'])) : ?>
+                        <a href="database/logout.php" >Signout</a>
+                        <a href="entrySubmission.php">Submit Entry</a>
+                    <?php endif ?>
                 </li>
             </ul>
         </nav>
     </header>
 
+    
+
     <main class="main-home">
 
-        <?php if (!isset($_SESSION['loggedon'])) : ?>
+        
+
+<!-- check if session is empty (not logged in)  -->
+        <?php if(empty($_SESSION)) : ?>
             <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -138,6 +152,11 @@
             WARNING! BEWARE!: Most Dangerous Anomaly 
         </h1>
         <hr class="main-line">
+
+        <!-- REMOVE LATER! -->
+        <?php if(isset($_SESSION['loggedon'])) : ?>
+            <h1>PlaceHolder TEST TEXT</h1>
+        <?php endif ?>  
 
         <div class="content-top-center-home">
             <div class="home-top-container">
@@ -295,7 +314,7 @@
             </p>
 
 
-            <a href="terminologies.html">Learn More</a>
+            <a href="terminologies.php">Learn More</a>
         </div>
 
     </main>
@@ -304,19 +323,19 @@
     
     <footer>
         <div class="footer-top">
-            <a href="recruitment.html" class="btn btn-info link" role="button">RECRUITMENT</a>
+            <a href="recruitment.php" class="btn btn-info link" role="button">RECRUITMENT</a>
             <a href="#" class="btn btn-info link" role="button" data-bs-toggle="modal" data-bs-target="#modal-report">REPORT</a>
         </div>
  
         <div class="footer-bottom-left">
-            <a href="history.html">History</a>
+            <a href="history.php">History</a>
         </div>
 
         <div class="footer-bottom">
             <a href="#" data-bs-toggle="modal" data-bs-target="#modal-feedback">Feedback</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="termsAndAgreements.html">Terms and Agreements</a>
-            <a href="contactUs.html">Contact</a>
+            <a href="privacy.php">Privacy</a>
+            <a href="termsAndAgreements.php">Terms and Agreements</a>
+            <a href="contactUs.php">Contact</a>
         </div>
     </footer>
 
