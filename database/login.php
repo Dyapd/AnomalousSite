@@ -19,7 +19,8 @@
       $data = $stmt_result->fetch_assoc();
       if($data['password'] === $password)
       {
-        header("Location:../index copy.html");
+        $_SESSION['loggedon'] = '$username';
+        header("Location:../index.php");
       }
       else
       {

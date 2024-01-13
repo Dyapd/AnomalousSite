@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="layouts.css">
+        <link rel="stylesheet" href="modules.css">
+        <title>
+            ZPD Home Page
+        </title>
+    </head>
+<body>
+
+    <header>
+
+        <div class="header-border">
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="images/placeholdericon.png" alt="Logo" width="75px">
+                </a>
+            </div>
+            <div class="search-container">
+                <input class="searchBox" type="search" name="search" placeholder="Search...">
+                <img class="search-icon" src="images/searchicon.png" alt="search">
+            </div>  
+        </div>
+
+    </header>
+
+    <header class="header-bottomshape">
+        <nav>
+            <ul>
+                <li>
+                    <a href="aboutUs.html">About</a>
+                    <a href="#">Entry List</a>
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-active">
+
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <a href="recruitment.html" class="btn btn-info link" role="button">RECRUITMENT</a>
+            <a href="#" class="btn btn-info link" role="button" data-bs-toggle="modal" data-bs-target="#modal-report">REPORT</a>
+        </div>
+ 
+        <div class="footer-bottom-left">
+            <a href="history.html">History</a>
+        </div>
+
+        <div class="footer-bottom">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-feedback">Feedback</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="termsAndAgreements.html">Terms and Agreements</a>
+            <a href="contactUs.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    
+</body>
+</html>

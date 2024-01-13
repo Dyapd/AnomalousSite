@@ -1,6 +1,6 @@
 <?php
-    include "database/feedback.php";
-    
+    session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -47,32 +47,34 @@
 
     <main class="main-home">
 
-        <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <img src="#" alt="Logo">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body"> 
-                        <form id="loginform" action="database/login.php" method="post"> <!-- put php here -->
-                            <p>
-                            Username:
-                            </p>
-                            <input type="text" id="username" name="username">
-                            <p>
-                            Password:
-                            </p>
-                            <input type="text" id="password" name="password">
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary" form="loginform" name="login">Login</button>
+        <?php if (!isset($_SESSION['loggedon'])) : ?>
+            <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="#" alt="Logo">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"> 
+                            <form id="loginform" action="database/login.php" method="post"> <!-- put php here -->
+                                <p>
+                                Username:
+                                </p>
+                                <input type="text" id="username" name="username">
+                                <p>
+                                Password:
+                                </p>
+                                <input type="text" id="password" name="password">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" form="loginform" name="login">Login</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        <?php endif ?>
 
         <div class="modal fade" id="modal-feedback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog"> 
