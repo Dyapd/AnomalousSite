@@ -571,6 +571,10 @@
 
 /* styles for recruitment page */
 
+.main-recruitment h2{
+    width: 100%;
+}
+
 .buttons-recruitment {
     border-top: gray solid;
     border-bottom: gray solid;
@@ -594,22 +598,50 @@
 .sec-rec{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.sec-rec h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
 }
 
 
 .inv-rec{
     display: none;
     flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.inv-rec h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
 }
 
 .con-rec{
     display: none;
     flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.con-rec h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
 }
 
 .res-rec{
     display: none;
     flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.res-rec h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
 }
 
 .active, .buttons-recruitment button:hover{
@@ -620,14 +652,45 @@
 
 .image-recruitment{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-recruitment img{
+   width: 40%;
+   min-height: 200px;
+   max-height: 400px;
 }
 
 .button-con-rec{
     width: 100%;
 }
 
+.button-con-rec{
+    display: flex;
+}
+
+
+.button-con-rec a{
+    margin-left: auto;
+}
+
+
 .btn-apply-rec{
-    padding: 50px;
+    width: 100px;
+    height: 50px;
+    margin-left: auto;
+    background-color: #DF935C;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+.btn-apply-rec:hover{
+    background-color: #fcb582;
+
+    
 }
 
 .line-recruitment{
