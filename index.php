@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include 'database/modals.php';
 
 ?>
 
@@ -79,7 +80,7 @@
                                 <p>
                                 Password:
                                 </p>
-                                <input type="text" id="password" name="password">
+                                <input type="password" id="password" name="password">
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -99,7 +100,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form id="feedbackform" action="database/feedback.php" method="post"> <!-- put php here -->
+                        <form id="feedbackform" action="#" method="post"> <!-- put php here -->
                             <p>
                                 Email Address(Optional):
                             </p>
@@ -111,7 +112,7 @@
                         </form> 
                     </div>
                     <div class="modal-footer">
-                        <button form="feedbackform" class="btn btn-primary" name="">Submit</button>
+                        <button form="feedbackform" class="btn btn-primary" name="feedback">Submit</button>
                     </div>
                 </div>
             </div>
@@ -126,7 +127,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form id="reportform" action="database/report.php" method="post"> <!-- put php here -->
+                        <form id="reportform" action="#" method="post"> <!-- put php here -->
                             <p>
                                 What did you encounter?
                             </p>
@@ -142,7 +143,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary" form="reportform">Report</button>
+                        <button class="btn btn-primary" form="reportform" name="report">Report</button>
                     </div>
                 </div>
             </div>

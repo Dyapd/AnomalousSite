@@ -1,6 +1,6 @@
 <?php
     session_start();
-
+    include 'database/modals.php';
 ?>
 
 <!DOCTYPE html>
@@ -88,7 +88,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form id="feedbackform" action="database/feedback.php" method="post"> <!-- put php here -->
+                            <form id="feedbackform" action="#" method="post"> <!-- put php here -->
                                 <p>
                                     Email Address(Optional):
                                 </p>
@@ -100,7 +100,7 @@
                             </form> 
                         </div>
                         <div class="modal-footer">
-                            <button form="feedbackform" class="btn btn-primary" name="">Submit</button>
+                            <button form="feedbackform" class="btn btn-primary" name="feedback">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form id="reportform" action="database/report.php" method="post"> <!-- put php here -->
+                            <form id="reportform" action="#" method="post"> <!-- put php here -->
                                 <p>
                                     What did you encounter?
                                 </p>
@@ -131,7 +131,7 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-primary" form="reportform">Report</button>
+                            <button class="btn btn-primary" form="reportform" name="report">Report</button>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
         <h1>
             Entry Submission
         </h1>
-        <form name="entryForm" action="database/entrySubmission.php" class="entrysubmission-form" method="post" enctype="multipart/form-data"
+        <form name="entryForm" action="#" class="entrysubmission-form" method="post" enctype="multipart/form-data"
          required>    
             <br>
 
@@ -154,11 +154,12 @@
             <label for="investigationtitle" class="menu-form">Investigation Name (Title)*:</label> <br>
             <input type="text" class="textFields-form" name="title" required> <br>
 
-            <label for="entryName" class="menu-form">Investigation Entry Number (EN-001/EV-001/PL-001/OB-001)*:</label> <br>
-            <input type="text" class="textFields-form" name="entryName" required> <br>
+            <label for="entryName" class="menu-form" >Entry Number (EN-001/EV-001/PL-001/OB-001)*:</label> <br>
+            <input type="text" class="textFields-form" 
+             name="entryName" required> <br>
 
             <label for="report" class="menu-form">Investigation Report*:</label> <br>
-            <textarea name="report" id="report" rows="10" class="textFields-form" name="report" required></textarea> <br>
+            <textarea name="reporte" id="report" rows="10" class="textFields-form" name="report" required></textarea> <br>
 
             <label for="imgrep" class="menu-form">Photo:</label>
             <input type="file" id="fileInput" class="inImg-form" name="img" accept=".jpg, .jpeg, .png"> <br>   
@@ -197,7 +198,7 @@
 
             <br>
 
-            <button class="btn btn-primary">
+            <button class="btn btn-primary" name="entrySubmission">
                 Submit
             </button>
         </form>

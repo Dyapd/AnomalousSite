@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include 'database/modals.php';
 
 ?>
 <!DOCTYPE html>
