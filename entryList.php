@@ -43,19 +43,13 @@
 
 <body>
     <header>
-
         <div class="header-border">
             <div class="logo-img">
                 <a href="index.php">
                     <img src="images/placeholdericon.png" alt="Logo" width="75px">
                 </a>
-            </div>
-            <div class="search-container">
-                <input class="searchBox" type="search" name="search" placeholder="Search...">
-                <img class="search-icon" src="images/searchicon.png" alt="search">
-            </div>  
+            </div> 
         </div>
-
     </header>
 
    <header class="header-bottomshape">

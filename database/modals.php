@@ -17,7 +17,7 @@
             $stmt->execute();
             ?>
                 <script>
-                    alert("Submission sent~!");
+                    alert("Feedback sent! Thank you for your time!");
                 </script>
             <?php
             $stmt->close();
@@ -40,7 +40,11 @@
             $stmt = $con->prepare("INSERT INTO reportdb(what, location, time) VALUES (?, ?, ?)");
             $stmt->bind_param("sss", $what, $location, $time);
             $stmt->execute();
-            echo "Report sent!";
+            ?>
+                <script>
+                    alert("Report sent!");
+                </script>
+            <?php
             $stmt->close();
             $con->close();
         }
