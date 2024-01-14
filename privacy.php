@@ -54,7 +54,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <img src="#" alt="Logo">
+                            <img src="images/sdplogo.png" alt="Logo" class="modal-logo">
                             <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -82,7 +82,7 @@
             <div class="modal-dialog"> 
                 <div class="modal-content">
                     <div class="modal-header">
-                        <img src="#" alt="Logo">
+                        <img src="images/sdplogo.png" alt="Logo" class="modal-logo">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Feedback</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -109,7 +109,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <img src="#" alt="Logo">
+                        <img src="images/sdplogo.png" alt="Logo" class="modal-logo">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Report Anomaly</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
