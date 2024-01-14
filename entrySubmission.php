@@ -66,7 +66,7 @@
                                     <p>
                                     Password:
                                     </p>
-                                    <input type="text" id="password" name="password">
+                                    <input type="password" id="password" name="password">
                                 </form>
                             </div>
                             <div class="modal-footer">
@@ -153,8 +153,10 @@
             <input type="text" class="textFields-form" name="title" required> <br>
 
             <label for="entryName" class="menu-form" >Entry Number (EN-001/EV-001/PL-001/OB-001)*:</label> <br>
-            <input type="text" class="textFields-form" 
-             name="entryName" required> <br>
+            <input type="text" class="textFields-form" name="entryName"
+            pattern="(EN|PL|OB|EV)-\d\d\d"
+            title="Please use the format (EN-XXX/EV-XXX/PL-XXX/OB-XXX)"
+            required> <br>
 
             <label for="report" class="menu-form">Investigation Report*:</label> <br>
             <textarea name="reporte" id="report" rows="10" class="textFields-form" name="report" required></textarea> <br>

@@ -73,7 +73,7 @@
                                 <p>
                                 Password:
                                 </p>
-                                <input type="text" id="password" name="password">
+                                <input type="password" id="password" name="password">
                             </form>
                         </div>
                         <div class="modal-footer">

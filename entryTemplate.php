@@ -21,7 +21,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>
-        Entry Template
+        <?php foreach($query as $q): ?>
+            <?php echo $q['entryName']?> : <?php echo $q['title']?>
+        <?php endforeach; ?>
+
     </title>
 </head>
 <body>
@@ -76,7 +79,7 @@
                                 <p>
                                 Password:
                                 </p>
-                                <input type="text" id="password" name="password">
+                                <input type="password" id="password" name="password">
                             </form>
                         </div>
                         <div class="modal-footer">

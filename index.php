@@ -151,10 +151,7 @@
         </h1>
         <hr class="main-line">
 
-        <!-- REMOVE LATER! -->
-        <?php if(isset($_SESSION['loggedon'])) : ?>
-            <h1>PlaceHolder TEST TEXT</h1>
-        <?php endif ?>  
+       
 
         <div class="content-top-center-home">
             <div class="home-top-container">
@@ -302,7 +299,7 @@
             <br>
 
             <p>
-                This website was made by the SPD International to act as an information site for the public. So that you know which threats inhabit your area, recognize which anomalies to avoid and as another hub for information regarding anomalies. 
+                This website was made by the SDP International to act as an information site for the public. So that you know which threats inhabit your area, recognize which anomalies to avoid and as another hub for information regarding anomalies. 
             </p>
 
             <br>

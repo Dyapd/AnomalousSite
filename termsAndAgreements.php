@@ -67,7 +67,7 @@
                                 <p>
                                 Password:
                                 </p>
-                                <input type="text" id="password" name="password">
+                                <input type="password" id="password" name="password">
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -142,7 +142,7 @@
             </h1>
             <br>
             <p>
-                Using SPD means agreeing to use it responsibly and legally. Respect our intellectual property,
+                Using SDP means agreeing to use it responsibly and legally. Respect our intellectual property,
                  check our Privacy Policy for how we handle your information, and understand that user-generated 
                  content may be used by us. The website is provided "as-is," without guarantees of accuracy, and
                   we are not liable for damages. 
@@ -157,12 +157,12 @@
             </h3>
 
             <p>
-                Secure Protect Document (SPD) serves as a platform that offers valuable information. 
+                Secure Protect Document (SDP) serves as a platform that offers valuable information. 
                 Users are required to responsibly utilize the site and comply with our terms and conditions. 
                 Our content is safeguarded by intellectual property rights, and we may use user-generated content.
                  The website is provided in its current state, and although we aim for accuracy, we cannot ensure it.
                   User privacy is our priority, and our Privacy Policy outlines the handling of personal information.
-                   We appreciate your responsible use of Secure Protect Document (SPD)!
+                   We appreciate your responsible use of Secure Protect Document (SDP)!
             </p>
         </div>
         <hr class="line-termsand">
