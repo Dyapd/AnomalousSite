@@ -148,6 +148,19 @@
 
 .content-right-news-home{
     height: 33%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-right-news-home h4{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.content-right-news-home p{
+    margin-left: 5px;
 }
 
 .content-right-home h1{

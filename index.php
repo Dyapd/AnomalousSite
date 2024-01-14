@@ -171,6 +171,10 @@
                         * Chile
                         <br>
                         * Brazil
+                        <br>
+                        * Argentina
+                        <br>
+                        * Peru
                     </p>
 
                     <a href="entryTemplate.php?id=35">Learn More</a>
@@ -263,10 +267,12 @@
 
            <div class="content-right-news-home">
            <h4>
-            The basic guide to anomalies
+            A Messy Mess Spotted in Argentina!
            </h4>
            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates recusandae qui magnam libero saepe cum temporibus unde voluptate cumque adipisci debitis inventore ipsa quasi iusto, provident harum dolorum! Obcaecati, ipsum.
+           EV-014 is reported to be targeting the town of San Luis in Argentina. Local SDP branches had already dispatched 
+           guardsmen in order to evacuate the town, and to establish a perimeter around the area. This has been its 5th sighting
+            throughout its history, and the SDP is hoping to establish a new strategy in countering the anomaly.
            </p>
             </div>
            
@@ -275,11 +281,14 @@
            <hr>
            <div class="content-right-news-home">
             <h4>
-             New bases in South Africa
+             SDP's Presence in South Africa, Increased?
  
             </h4>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est amet consequuntur assumenda natus quasi omnis praesentium accusantium aliquam ex hic aut neque adipisci, quos debitis? Quam eaque voluptatem modi accusantium?
+            New bases in South Africa were established, particularly in the regions of the Northern Cape, 
+            and Eastern Cape, in order to combat the rising appearances of anomalies in the area. The president
+             of South Africa had expressed thanks for the new reinforcements coming to their country and they promise 
+             to also house and support the SDP agents whenever and wherever they can.
             </p>
             </div>
            <br>
