@@ -61,6 +61,31 @@
 
     <main class="main-entry">
 
+    <div class="modal fade" id="modal-delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog"> 
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="#" alt="Logo">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="deleteform" action="#" method="post"> <!-- put php here -->
+                        <p>
+                            Are you sure you want to delete this entry?
+                        </p>
+                    </form> 
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                <button form="deleteform" class="btn btn-primary" name="delete">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <?php if(empty($_SESSION)) : ?>
             <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -88,7 +113,7 @@
                     </div>
                 </div>
             </div>
-        <?php endif ?>
+    <?php endif ?>
 
         <div class="modal fade" id="modal-feedback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog"> 
@@ -164,6 +189,10 @@
 
             <h2>Threat Level:</h2>
             <p> <?php echo $q['threat']?> </p>
+
+            <h2>Current Location:</h2>
+            <p> <?php echo $q['location']?> </p>
+
         </div>
 
         <div class="content-right-entrytem">
@@ -184,16 +213,20 @@
                 <?php echo $q['report']?>
             </p>
             
-            <div class="entry-line"> 
+            <div class="entry-line">
+                
+            <p>
+                Submitted by <?php echo $q['name']?>
+            </p>
 
         </div>
             
         </div>
 
         <?php if(isset($_SESSION['loggedon'])) : ?>
-            <form action="#" method="post">
+            <form action="#" method="post" class="content-bottom-entrytem-btns">
                 <a href="entryEdit.php?id=<?php echo $q['id']?>" class="btn btn-secondary">Edit</a>
-                <button class="btn btn-danger ml-2" name="delete" >Delete</button>
+                <a href="#" class="btn btn-danger ml-2" role="button" data-bs-toggle="modal" data-bs-target="#modal-delete">Delete</a>
             </form>
         <?php endif ?>
 

@@ -235,7 +235,7 @@
                 
                 <?php
 
-                header("Location:../entryList.php");
+                header("Location:entryList.php");
                 exit();
             }
             }
@@ -267,7 +267,7 @@
             </script>
         <?php   
         mysqli_query($con, $stmt);
-        header("Location:entryList.php");
+        header("Location:../entryList.php");
         
         exit();
     }

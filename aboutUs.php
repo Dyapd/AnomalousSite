@@ -148,12 +148,18 @@
             <img src="images/sdplogo.png" alt="placeholder icon">
             <br>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nobis possimus velit id eveniet sunt eius, repellendus facilis eligendi soluta? Rerum perspiciatis ea officia porro quidem maiores ut doloremque possimus?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa asperiores nemo temporibus doloribus atque similique, saepe ab recusandae eaque dicta nesciunt dolorem labore. Blanditiis ipsa reiciendis quas suscipit soluta.
+            Secure Document Protect is an international organization made in 1955 in response to the appearance of anomalies. 
+            Our purpose is to secure anomalies to where they cannot harm other people, and to study them in order to combat these
+             threats. We do our utmost best in achieving these objectives. With more than 100 facilities around the world, and with
+              backing from numerous nation states, we believe that we have the resources to protect the world.
             </p>
             <p>
-                <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nobis possimus velit id eveniet sunt eius, repellendus facilis eligendi soluta? Rerum perspiciatis ea officia porro quidem maiores ut doloremque possimus?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa asperiores nemo temporibus doloribus atque similique, saepe ab recusandae eaque dicta nesciunt dolorem labore. Blanditiis ipsa reiciendis quas suscipit soluta.
+                <br>
+                Our headquarters is located in The Reunion Island. With regional Forward Operating Bases operating in the
+                 regions of West Coast USA, East Coast USA, Brazillian Facility, Chilean Facility, Western Europe, Eastern 
+                 Europe, North Africa, South Africa, Central Africa, Middle East, India, China, Eastern Siberia, Japan, Indonesia, 
+                 Australia and Myanmar.
+
             </p>
         </div>
         
@@ -165,6 +171,70 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, optio maiores obcaecati in ad vel ipsam nesciunt cumque dolorum commodi fugiat totam accusamus laboriosam sit ullam nihil libero sunt aut!
             </p>
         </div>
+
+        <h2>
+            Important Employees
+        </h2>
+
+        <div class="employeepart-about">
+            <img src="images/vida.jpg" alt="picture of vida">
+            <p>
+                <b>Head of Research Department, Marc Andrei Vida</b>
+                <br>
+                <br>
+                A brilliant and accomplished individual who serves as the president of the Research Department and is a 
+                key asset within the ZPD. With a remarkable intellect and a stellar academic background, Vida’s mind is 
+                second to none. He leads the development of Nano-infusion body armor and spearheads the development of weapons. 
+                He and his handpicked group of scientist's research captured anomalies to determine if they’d be useful for the 
+                advancement of humanity. In his mind lies humanity's existence. 
+            </p>
+        </div>
+
+            
+        <div class="employeepart-about">
+            
+            <img src="images/allen.png" alt="picture of allen">
+            <p>
+                <b>Head of Administration, Allen Payad</b>
+                <br>
+                <br>
+                The right-hand man of the Director, known for his exceptional organizational and administrative skills 
+                it’s no wonder he got recruited by the Director to be the front leader of the ZPD organization. Possessing 
+                a keen eye for talent and a bright mind to multi-task the bureaucracy of the ZPD. His strategic planning and
+                 tactical organization ensure the ZPD works like a well-oiled machine. 
+            </p>
+        </div>
+
+        
+        <div class="employeepart-about">
+            <img src="images/alliyah.jpg" alt="picture of alliyah">
+            <p>
+                <b>Head of Design and Marketing, Alliyah Hernandez</b>
+                <br>
+                <br>
+                Recruited by Allen to ease up the bureaucracy of the ZPD, her talents exceed everyone’s expectations as she drew up 
+                plans and reforms that make up the ZPD organization as we know today. She got herself a promotion to be Head of Design 
+                and Marketing, a position that was solely created just for her. Now with her the ZPD enjoys a steady supply of manpower 
+                without the headaches and chaos of the many branches and departments within the ZPD all thanks to her. 
+            </p>
+        </div>
+
+        
+        <div class="employeepart-about">
+            <img src="images/kenshin.jpg" alt="picture of kenshin">
+            <p>
+                <b>Head of Security, Kenshin Soriano.</b>
+                <br>
+                <br>
+                The forefront of the security operations of the renowned ZPD organization, brought up by the leader during its creation. 
+                His background remains to all save for a few, his ability to instill discipline and strategic planning allows the soldiers
+                 of the ZPD to have the courage to take up arms against the unknown. With a military mind better than most, his 
+                 quick-thinking and flexibility allows for a rapid deployment of guards and soldiers to safeguard the world from the 
+                 anomalies.
+                
+            </p>
+        </div>
+
     </main>
 
     <footer>

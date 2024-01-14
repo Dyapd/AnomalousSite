@@ -158,19 +158,22 @@
                 <img src="images/placeholder-img-home.png" alt="Image Unavalaible" class="home-main-img">
                 <div class="home-top-box">
                     <h3>
-                        Name:
+                        Name: A Messy Mess
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid non ipsum illum dolorem sequi aliquam, accusantium voluptate a cupiditate. Officiis est laboriosam reiciendis, ipsam perspiciatis harum nisi quas eaque.  
+                    An event known as A Messy Mess, where it blocks a particular area for a particular amount of time. The only warning sign is a smell of oranges! 
                     </p>
 
                     <h3>
                         <br>Active Locations:
                     </h3>
                     <p>
-                        * Celebes 
-                        <br>* Tidores
+                        * Chile
+                        <br>
+                        * Brazil
                     </p>
+
+                    <a href="entryTemplate.php?id=35">Learn More</a>
                 </div>
             </div>
         </div>
@@ -178,7 +181,7 @@
         <div class="content-left-home">
             <div class="content-left-top-home">
                
-                <a href="#">Active Threats</a>
+                <a href="#">Active Anomalies</a>
                 
 
                 <div id="pics-active-home" class="carousel slide">
@@ -189,7 +192,7 @@
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <a href=""><img src="images/samplean.jpg" class="d-block w-100" alt="..."></a>
+                        <a href="entryTemplate.php?id=40"><img src="images/samplean.jpg" class="d-block w-100" alt="..."></a>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>The Moving City</h5>
                         </div>
@@ -218,7 +221,7 @@
                   </div>
             </div>
             <div class="content-left-bottom-home">
-                <a href="#">Recently Encountered Threats</a>
+                <a href="#">Recently Encountered Anomalies</a>
 
                 <div id="pics-recent-home" class="carousel slide">
                     <div class="carousel-indicators">
@@ -228,7 +231,7 @@
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <a href=""><img src="images/samplean2.jpg" class="d-block w-100" alt="..."></a>
+                        <a href="entryTemplate.php?id=37"><img src="images/samplean2.jpg" class="d-block w-100" alt="..."></a>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Borealis Worm</h5>
                         </div>

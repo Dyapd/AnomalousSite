@@ -200,6 +200,7 @@
                         <option value="Unknown">Status: Unknown</option>
                         <option value="Secured">Status: Secured</option>
                         <option value="Cooperative">Status: Cooperative</option>
+                        <option value="Monitored">Status: Monitored</option>
                         <option value="Terminated">Status: Terminated</option>
                     </select>
                 </div>
