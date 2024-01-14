@@ -25,20 +25,20 @@ header{
 
 
 .logo-img{
-    margin:auto;
     display: flex;
     justify-content: left;
-    align-items: flex-start;
+    margin-right: auto;
+    margin-left: 10%;
 }
 
 .logo-img a{
-    width: 150px;
+    width: 100px;
     justify-content: left;
 }
 
 
 .logo-img a img{
-    width: 150px;
+    width: 250px;
     justify-content: left;
 }
 
@@ -238,7 +238,7 @@ footer a{
 }
 
 .modal-logo{
-    width: 100px;
+    width: 85px;
 }
 
 

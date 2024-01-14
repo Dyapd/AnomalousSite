@@ -24,7 +24,7 @@
         <div class="header-border">
             <div class="logo-img">
                 <a href="index.php">
-                    <img src="images/sdplogo.png" alt="Logo" width="75px">
+                    <img src="images/headerlogo.png" alt="Logo" width="75px">
                 </a>
             </div> 
         </div>
@@ -68,11 +68,11 @@
                                 <p>
                                 Username:
                                 </p>
-                                <input type="text" id="username" name="username">
+                                <input type="text" id="username" name="username" required>
                                 <p>
                                 Password:
                                 </p>
-                                <input type="password" id="password" name="password">
+                                <input type="password" id="password" name="password" required>
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -92,19 +92,19 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action=""> <!-- put php here -->
+                        <form id="feedbackform" action="#" method="post"> <!-- put php here -->
                             <p>
                                 Email Address(Optional):
                             </p>
-                            <input type="text" id="emailad "name="emailad">
+                            <input type="email" id="emailad "name="emailad">
                             <p>
                                 What did you notice about our website?/ Any ideas?:
-                            </p>
-                            <input type="text" id="feedback "name="feedback">
-                        </form>
+                            </p>     
+                            <textarea name="feedback" class="form-control" id="floatingTextarea2" style="height: 100px" required></textarea>
+                        </form> 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Report</button>
+                        <button form="feedbackform" class="btn btn-primary" name="feedback">Submit</button>
                     </div>
                 </div>
             </div>
@@ -119,11 +119,11 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action=""> <!-- put php here -->
+                        <form id="reportform" action="#" method="post"> <!-- put php here -->
                             <p>
                                 What did you encounter?
                             </p>
-                            <input type="text" id="what" name="what">
+                            <input type="text" id="what" name="what" >
                             <p>
                                 Where did you encounter it?
                             </p>
@@ -135,7 +135,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Report</button>
+                        <button class="btn btn-primary" form="reportform" name="report">Report</button>
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@
             <h1>
                 About Us
             </h1>
-            <img src="images/sdplogo.png" alt="placeholder icon">
+            <img src="images/headerlogo-black.png" alt="placeholder icon">
             <br>
             <p>
             Secure Document Protect is an international organization made in 1955 in response to the appearance of anomalies. 

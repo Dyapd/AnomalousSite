@@ -133,6 +133,7 @@
                     alert("Entry Submitted Successfully!");
                 </script>
                 <?php
+                header("Location:entryList.php");
                 $stmt->close();
                 $con->close();
             }
@@ -267,7 +268,7 @@
             </script>
         <?php   
         mysqli_query($con, $stmt);
-        header("Location:../entryList.php");
+        header("Location:entryList.php");
         
         exit();
     }

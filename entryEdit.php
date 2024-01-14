@@ -23,7 +23,7 @@
         <div class="header-border">
             <div class="logo-img">
                 <a href="index.php">
-                    <img src="images/sdplogo.png" alt="Logo" width="75px">
+                    <img src="images/headerlogo.png" alt="Logo" width="75px">
                 </a>
             </div> 
         </div>
@@ -52,92 +52,92 @@
 
     <main class="main-entryEdit">
 
-        <?php if(empty($_SESSION)) : ?>
-                <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <img src="images/sdplogo.png" alt="Logo" class="modal-logo">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body"> 
-                                <form id="loginform" action="database/login.php" method="post"> <!-- put php here -->
-                                    <p>
-                                    Username:
-                                    </p>
-                                    <input type="text" id="username" name="username">
-                                    <p>
-                                    Password:
-                                    </p>
-                                    <input type="password" id="password" name="password">
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-primary" form="loginform" name="login">Login</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <?php endif ?>
-
-            <div class="modal fade" id="modal-feedback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog"> 
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <img src="images/sdplogo.png" alt="Logo" class="modal-logo">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Feedback</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form id="feedbackform" action="#" method="post"> <!-- put php here -->
-                                <p>
-                                    Email Address(Optional):
-                                </p>
-                                <input type="text" id="emailad "name="emailad">
-                                <p>
-                                    What did you notice about our website?/ Any ideas?:
-                                </p>     
-                                <textarea name="feedback" class="form-control" id="floatingTextarea2" style="height: 100px" required></textarea>
-                            </form> 
-                        </div>
-                        <div class="modal-footer">
-                            <button form="feedbackform" class="btn btn-primary" name="feedback">Submit</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="modal-report" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <?php if(empty($_SESSION)) : ?>
+            <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                             <img src="images/sdplogo.png" alt="Logo" class="modal-logo">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Report Anomaly</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <form id="reportform" action="#" method="post"> <!-- put php here -->
+                        <div class="modal-body"> 
+                            <form id="loginform" action="database/login.php" method="post"> <!-- put php here -->
                                 <p>
-                                    What did you encounter?
+                                Username:
                                 </p>
-                                <input type="text" id="what" name="what" >
+                                <input type="text" id="username" name="username" required>
                                 <p>
-                                    Where did you encounter it?
+                                Password:
                                 </p>
-                                <input type="text" id="location" name="location">
-                                <p>
-                                    When did you encouter it?
-                                </p>
-                                <input type="text" id="time" name="time">
+                                <input type="password" id="password" name="password" required>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-primary" form="reportform" name="report">Report</button>
+                            <button class="btn btn-primary" form="loginform" name="login">Login</button>
                         </div>
                     </div>
                 </div>
             </div>
+        <?php endif ?>
+
+        <div class="modal fade" id="modal-feedback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog"> 
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="images/sdplogo.png" alt="Logo" class="modal-logo">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Feedback</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="feedbackform" action="#" method="post"> <!-- put php here -->
+                            <p>
+                                Email Address(Optional):
+                            </p>
+                            <input type="email" id="emailad "name="emailad">
+                            <p>
+                                What did you notice about our website?/ Any ideas?:
+                            </p>     
+                            <textarea name="feedback" class="form-control" id="floatingTextarea2" style="height: 100px" required></textarea>
+                        </form> 
+                    </div>
+                    <div class="modal-footer">
+                        <button form="feedbackform" class="btn btn-primary" name="feedback">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-report" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="images/sdplogo.png" alt="Logo" class="modal-logo">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Report Anomaly</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="reportform" action="#" method="post"> <!-- put php here -->
+                            <p>
+                                What did you encounter?
+                            </p>
+                            <input type="text" id="what" name="what" >
+                            <p>
+                                Where did you encounter it?
+                            </p>
+                            <input type="text" id="location" name="location">
+                            <p>
+                                When did you encouter it?
+                            </p>
+                            <input type="text" id="time" name="time">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" form="reportform" name="report">Report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="container">
         <h1>
