@@ -46,7 +46,7 @@
         <div class="header-border">
             <div class="logo-img">
                 <a href="index.php">
-                    <img src="images/placeholdericon.png" alt="Logo" width="75px">
+                    <img src="images/sdplogo.png" alt="Logo" width="75px">
                 </a>
             </div> 
         </div>

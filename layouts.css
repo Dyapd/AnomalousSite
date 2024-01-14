@@ -26,6 +26,16 @@ header{
 
 .logo-img{
     margin:auto;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+
+
+.logo-img a img{
+    width: 150px;
+    justify-content: left;
 }
 
 header nav ul{

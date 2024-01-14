@@ -24,7 +24,7 @@
         <div class="header-border">
             <div class="logo-img">
                 <a href="index.php">
-                    <img src="images/placeholdericon.png" alt="Logo" width="75px">
+                    <img src="images/sdplogo.png" alt="Logo" width="75px">
                 </a>
             </div> 
         </div>
@@ -145,7 +145,7 @@
             <h1>
                 About Us
             </h1>
-            <img src="#" alt="placeholder icon">
+            <img src="images/sdplogo.png" alt="placeholder icon">
             <br>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nobis possimus velit id eveniet sunt eius, repellendus facilis eligendi soluta? Rerum perspiciatis ea officia porro quidem maiores ut doloremque possimus?
