@@ -182,6 +182,11 @@
             <!-- this is for the lines in page -->
             <hr class="line-recruitment">
 
+            <!-- h2 for subheadings -->
+            <h2>
+                Guardsmen
+            </h2>
+
             <!-- copypaste these 2 lines to put image in -->
             <!-- put image in image folder then put the path in src -->
 
@@ -190,10 +195,7 @@
                 <img src="images/guardsmanpic.png" alt="picture of guardsmen">
             </div>
 
-            <!-- h2 for subheadings -->
-            <h2>
-                Guardsmen
-            </h2>
+            
 
             <!-- p for text -->
             <!-- br for next line -->

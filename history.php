@@ -147,6 +147,8 @@
             History
         </h1>
 
+        <hr>
+
         <div class="quote-history">
             <p>
                 “Forget what hurt you in the past, but never forget what it taught you.” </br> – Hiro Mashima
@@ -154,49 +156,31 @@
         </div>
 
         <hr>
-
-        <h2>
-            Placeholder
-        </h2>
-
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis eaque doloribus debitis sint ab, dolores aut eius. Vitae qui saepe ab! Facere, sunt quo est consequuntur odio eos alias doloremque!
-        </p>
-
-        <h3>
-            Placeholder
-        </h3>
         
-        <h4>
-            Placeholder
-        </h4>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse saepe repudiandae delectus iure officia minus, ipsum, accusantium suscipit unde animi voluptates perspiciatis. Aperiam nam voluptas aliquid inventore ducimus! Maiores!
+            The bloodiest time for humanity has just ended. The world is recovering from the ruin the two world wars have brought. We all thought that it's time to focus on rebuilding. However, that was not the case…
+            <br>
+            <br>
+            Strange entities started appearing around the world. Creatures that disrupt the natural order, objects that defy the laws of physics, and places that leave you question what is reality. The first known sighting is on the shores of Tokyo, Japan. It resembles a mutated crocodile with jagged spikes along its back. It started attacking in 1954. At first, it only focused on fishing boats, but later transitioned to attacking beaches, where the JSDF intervened. It took the JSDF a week to completely neutralize the creature. It only was able to fatally injure 7 people, while wounding 24, but it was able to open the eyes of the world.
+            <br>
+            <br>
+            The governments around the world came together to form an organization called the SDP. The name is an acronym, it highlights the three missions the organization must focus on: Search, Document, Protect.
+            <br>
+            <br>
+            Search, the organization must continue to locate anomalies around the world.
+            <br>
+            Document, the organization must study the anomalies to find their origin.
+            <br>
+            Protect, the organization must place the public’s safety as their top priority.
+            <br>
+            <br>
+            Despite being formed with the collaboration between multiple countries, the organization must remain neutral and in case of conflict between countries, the SDP is not allowed to join a side and must stay a neutral party.
         </p>
+
 
        <hr>
 
-        <h2>
-            Placeholder
-        </h2>
-
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis eaque doloribus debitis sint ab, dolores aut eius. Vitae qui saepe ab! Facere, sunt quo est consequuntur odio eos alias doloremque!
-        </p>
-
-        <h3>
-            Placeholder
-        </h3>
-
-        <h4>
-            Placeholder
-        </h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse saepe repudiandae delectus iure officia minus, ipsum, accusantium suscipit unde animi voluptates perspiciatis. Aperiam nam voluptas aliquid inventore ducimus! Maiores!
-        </p>
-
-        <hr>
-   
+        
         
     </main>
 
