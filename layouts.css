@@ -384,3 +384,13 @@ footer a{
     font-family: Oswald;
 }
 
+
+/* style for entry edit page */
+
+.main-entryEdit{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 265px);
+    width: 80%;
+    margin: auto;
+}

@@ -25,12 +25,26 @@
       }
       else
       {
-        echo "<h2>Invalid Username or Password</h2>";
+        
+        ?>
+          <script>
+            alert("Invalid Username or Password!");
+          </script>
+        <?php
+        header("Location:../index.php");
       }
     }
     else
     {
-      echo "<h2>Invalid Username or Password</h2>";
+      
+
+      ?>
+                <script>
+                    alert("Invalid Username or Password!");
+                </script>
+      <?php
+
+      header("Location:../index.php");
     }
   }
 ?>

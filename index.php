@@ -73,11 +73,11 @@
                                 <p>
                                 Username:
                                 </p>
-                                <input type="text" id="username" name="username">
+                                <input type="text" id="username" name="username" required>
                                 <p>
                                 Password:
                                 </p>
-                                <input type="password" id="password" name="password">
+                                <input type="password" id="password" name="password" required>
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -101,7 +101,7 @@
                             <p>
                                 Email Address(Optional):
                             </p>
-                            <input type="text" id="emailad "name="emailad">
+                            <input type="email" id="emailad "name="emailad">
                             <p>
                                 What did you notice about our website?/ Any ideas?:
                             </p>     

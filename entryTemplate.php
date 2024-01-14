@@ -190,7 +190,16 @@
             
         </div>
 
-        <?php endforeach; ?>
+        <?php if(isset($_SESSION['loggedon'])) : ?>
+            <form action="#" method="post">
+                <a href="entryEdit.php?id=<?php echo $q['id']?>" class="btn btn-secondary">Edit</a>
+                <button class="btn btn-danger ml-2" name="delete" >Delete</button>
+            </form>
+        <?php endif ?>
+
+    <?php endforeach; ?>
+
+    
     </main>
 
     <footer>

@@ -182,7 +182,7 @@
                     <td><?php echo $row[6];?></td>  
                     <td><?php echo $row[7];?></td>
                 </tr>
-                <?php endwhile;?>
+                    <?php endwhile;?>
             </tbody>
         </table>
         
