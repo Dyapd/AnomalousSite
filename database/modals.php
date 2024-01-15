@@ -209,13 +209,15 @@
             if ($pic_uploaded == 1)
             {
             /* this is for validation if an entryname(Ex EN-001) already exists */
-            $stmt = $con->prepare("SELECT id FROM entrysubdb WHERE entryName = ? LIMIT 2");
+            $stmt = $con->prepare("SELECT id FROM entrysubdb WHERE entryName = ? LIMIT 1");
             $stmt->bind_param("s", $entryName);
             $stmt->execute();
             $result = $stmt->get_result();
+            
+            $idar = $result->fetch_array(MYSQLI_ASSOC);
 
             /* This is the main code for putting everything in the database */
-            if($result->num_rows == 1 || $result->num_rows ==2) 
+            if($result->num_rows == 1 && $idar['id'] != $id) 
             {
                 ?>
                 <script>
