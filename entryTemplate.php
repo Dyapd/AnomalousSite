@@ -193,6 +193,9 @@
             <h2>Current Location:</h2>
             <p> <?php echo $q['location']?> </p>
 
+            <h2>Status:</h2>
+            <p> <?php echo $q['status']?> </p>
+
         </div>
 
         <div class="content-right-entrytem">
