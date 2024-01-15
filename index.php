@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>
-        ZPD Home Page
+        SDP Home Page
     </title>
 </head>
 <body>
@@ -110,7 +110,7 @@
                         </form> 
                     </div>
                     <div class="modal-footer">
-                        <button form="feedbackform" class="btn btn-primary" name="feedback">Submit</button>
+                        <button form="feedbackform" class="btn btn-primary" name="feedbackbtn">Submit</button>
                     </div>
                 </div>
             </div>
@@ -300,7 +300,7 @@
 
         <div class="content-bottom-home">
             <h4>
-                Guide to ZPD
+                Guide to SDP
             </h4>
             
             <br>

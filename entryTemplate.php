@@ -136,7 +136,7 @@
                         </form> 
                     </div>
                     <div class="modal-footer">
-                        <button form="feedbackform" class="btn btn-primary" name="feedback">Submit</button>
+                        <button form="feedbackform" class="btn btn-primary" name="feedbackbtn">Submit</button>
                     </div>
                 </div>
             </div>

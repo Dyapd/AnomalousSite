@@ -8,10 +8,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="layouts.css">
     <link rel="stylesheet" href="modules.css">
-    <title>Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>
+        Privacy Policy
+    </title>
 </head>
 <body>
     <header>
@@ -47,9 +53,7 @@
 
     <main class="main-privacy">
 
-
-                        
-    <?php if(empty($_SESSION)) : ?>
+        <?php if(empty($_SESSION)) : ?>
             <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -99,7 +103,7 @@
                         </form> 
                     </div>
                     <div class="modal-footer">
-                        <button form="feedbackform" class="btn btn-primary" name="feedback">Submit</button>
+                        <button form="feedbackform" class="btn btn-primary" name="feedbackbtn">Submit</button>
                     </div>
                 </div>
             </div>
@@ -217,5 +221,7 @@
             <a href="contactUs.php">Contact</a>
         </div>
     </footer>
+
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>

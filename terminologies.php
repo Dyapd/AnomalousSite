@@ -15,7 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <title>Terminologies</title>
+    <title>
+        Terminologies
+    </title>
 </head>
 <body>
     <header>
@@ -27,6 +29,7 @@
             </div> 
         </div>
     </header>
+
     <header class="header-bottomshape">
         <nav>
             <ul>
@@ -101,7 +104,7 @@
                         </form> 
                     </div>
                     <div class="modal-footer">
-                        <button form="feedbackform" class="btn btn-primary" name="feedback">Submit</button>
+                        <button form="feedbackform" class="btn btn-primary" name="feedbackbtn">Submit</button>
                     </div>
                 </div>
             </div>
@@ -199,7 +202,7 @@
             
         </p>
 
-       <hr>
+        <hr>
 
         <h2>
             Threat Level
@@ -252,6 +255,38 @@
         </p>
 
         <hr>
+        
+
+        <h2>
+                General Terms
+        </h2>
+
+        <p>
+                These are terms that are used commonly within the organization.
+        </p>
+
+        <h4>
+                Duratin
+        </h4>
+
+        <p>
+                A substance emitted by all known anomalies. Duratin appears in many different forms such as gases, or physical armor.
+                The substance acts like radiation in that specifically made sensors can detect whether or not something leaves a trace.
+                From the entities with high amount of Duratin in their systems, they exhibit stronger immunity to diseases than any known creature.
+                Duratin acts like a repairing agent while also acting as an enhancement, in the form of external armor, or weapons.
+                The SDP researchers, with the collaboration of multiple health research centers, found that Duratin is too volatile
+                to completely harness, often resulting in mutations and casualties, however, we are continuing to research if it meant
+                providing better health care for humans around the globe. (Submitted and summarized by Professor Vida, Head of Research Department.)
+        </p>
+
+        <h2>
+                
+        </h2>
+
+        <p>
+            
+        </p>
+
     </main>
 
     <footer>
@@ -271,8 +306,6 @@
             <a href="contactUs.php">Contact</a>
         </div>
     </footer>
-
-
 
     <script src="js/bootstrap.js"></script>
 </body>

@@ -104,7 +104,7 @@
                         </form> 
                     </div>
                     <div class="modal-footer">
-                        <button form="feedbackform" class="btn btn-primary" name="feedback">Submit</button>
+                        <button form="feedbackform" class="btn btn-primary" name="feedbackbtn">Submit</button>
                     </div>
                 </div>
             </div>
@@ -148,10 +148,10 @@
             <img src="images/headerlogo-black.png" alt="placeholder icon">
             <br>
             <p>
-            Secure Document Protect is an international organization made in 1955 in response to the appearance of anomalies. 
+            Secure Document Protect is an international organization made in August 6, 1960 in response to the rising presence of anomalies. 
             Our purpose is to secure anomalies to where they cannot harm other people, and to study them in order to combat these
              threats. We do our utmost best in achieving these objectives. With more than 100 facilities around the world, and with
-              backing from numerous nation states, we believe that we have the resources to protect the world.
+              backing from numerous governments, we believe that we have the resources to protect the world.
             </p>
             <p>
                 <br>
@@ -159,6 +159,9 @@
                  regions of West Coast USA, East Coast USA, Brazillian Facility, Chilean Facility, Western Europe, Eastern 
                  Europe, North Africa, South Africa, Central Africa, Middle East, India, China, Eastern Siberia, Japan, Indonesia, 
                  Australia and Myanmar.
+                <br>
+                <br>
+                SDP's government operates on a transparent and collaborative model, involving scientists, law enforcement, and military in anomaly research and containment efforts. The SDP employs cutting-edge technology and a highly trained task force to investigate and neutralize anomalies, ensuring that the general public remains safe from the unpredictable and often supernatural occurrences.
 
             </p>
         </div>
@@ -168,7 +171,11 @@
                 Purpose of this Website
             </h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, optio maiores obcaecati in ad vel ipsam nesciunt cumque dolorum commodi fugiat totam accusamus laboriosam sit ullam nihil libero sunt aut!
+                The SDP government emphasizes education and awareness, thus the creation of this website is to brief citizens and inform them about potential risks and dangers of anomalies, and ZPD’s ongoing efforts to protect them.  
+                <br>
+                <br>
+                The organization's commitment to securing and eradicating anomalies is reflected in its emphasis on international cooperation, as SDP collaborates with other countries to share knowledge and resources in the global fight against anomalous threats. The ZPD’s success is attributed to its military strengths which are adaptability, constantly evolving its strategies to address new and emerging anomalies.
+
             </p>
         </div>
 
@@ -183,7 +190,7 @@
                 <br>
                 <br>
                 A brilliant and accomplished individual who serves as the president of the Research Department and is a 
-                key asset within the ZPD. With a remarkable intellect and a stellar academic background, Vida’s mind is 
+                key asset within the SDP. With a remarkable intellect and a stellar academic background, Vida’s mind is 
                 second to none. He leads the development of Nano-infusion body armor and spearheads the development of weapons. 
                 He and his handpicked group of scientist's research captured anomalies to determine if they’d be useful for the 
                 advancement of humanity. In his mind lies humanity's existence. 
@@ -199,9 +206,9 @@
                 <br>
                 <br>
                 The right-hand man of the Director, known for his exceptional organizational and administrative skills 
-                it’s no wonder he got recruited by the Director to be the front leader of the ZPD organization. Possessing 
-                a keen eye for talent and a bright mind to multi-task the bureaucracy of the ZPD. His strategic planning and
-                 tactical organization ensure the ZPD works like a well-oiled machine. 
+                it’s no wonder he got recruited by the Director to be the front leader of the SDP organization. Possessing 
+                a keen eye for talent and a bright mind to multi-task the bureaucracy of the SDP. His strategic planning and
+                 tactical organization ensure the SDP works like a well-oiled machine. 
             </p>
         </div>
 
@@ -212,10 +219,10 @@
                 <b>Head of Design and Marketing, Alliyah Hernandez</b>
                 <br>
                 <br>
-                Recruited by Allen to ease up the bureaucracy of the ZPD, her talents exceed everyone’s expectations as she drew up 
-                plans and reforms that make up the ZPD organization as we know today. She got herself a promotion to be Head of Design 
-                and Marketing, a position that was solely created just for her. Now with her the ZPD enjoys a steady supply of manpower 
-                without the headaches and chaos of the many branches and departments within the ZPD all thanks to her. 
+                Recruited by Allen to ease up the bureaucracy of the SDP, her talents exceed everyone’s expectations as she drew up 
+                plans and reforms that make up the SDP organization as we know today. She got herself a promotion to be Head of Design 
+                and Marketing, a position that was solely created just for her. Now with her the SDP enjoys a steady supply of manpower 
+                without the headaches and chaos of the many branches and departments within the SDP all thanks to her. 
             </p>
         </div>
 
@@ -226,9 +233,9 @@
                 <b>Head of Security, Kenshin Soriano.</b>
                 <br>
                 <br>
-                The forefront of the security operations of the renowned ZPD organization, brought up by the leader during its creation. 
+                The forefront of the security operations of the renowned SDP organization, brought up by the leader during its creation. 
                 His background remains to all save for a few, his ability to instill discipline and strategic planning allows the soldiers
-                 of the ZPD to have the courage to take up arms against the unknown. With a military mind better than most, his 
+                 of the SDP to have the courage to take up arms against the unknown. With a military mind better than most, his 
                  quick-thinking and flexibility allows for a rapid deployment of guards and soldiers to safeguard the world from the 
                  anomalies.
                 

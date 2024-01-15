@@ -1,6 +1,6 @@
 <?php
 
-    if(isset($_REQUEST['feedback']))
+    if(isset($_REQUEST['feedbackbtn']))
     {
         $emailad = $_POST['emailad'];
         $feedback = $_POST['feedback'];
@@ -109,13 +109,13 @@
             if ($pic_uploaded == 1)
             {
             /* this is for validation if an entryname(Ex EN-001) already exists */
-            $stmt = $con->prepare("SELECT id FROM entrysubdb WHERE entryName = ? LIMIT 2");
+            $stmt = $con->prepare("SELECT id FROM entrysubdb WHERE entryName = ? LIMIT 1");
             $stmt->bind_param("s", $entryName);
             $stmt->execute();
             $result = $stmt->get_result();
 
             /* This is the main code for putting everything in the database */
-            if($result->num_rows == 2) 
+            if($result->num_rows == 1) 
             {
                 ?>
                 <script>
@@ -215,11 +215,11 @@
             $result = $stmt->get_result();
 
             /* This is the main code for putting everything in the database */
-            if($result->num_rows == 2) 
+            if($result->num_rows == 1 || $result->num_rows ==2) 
             {
                 ?>
                 <script>
-                    alert("Entry Number Already Exists.");
+                    alert("Entry Number Already Exists.");  
                 </script>
                 <?php
             } 
