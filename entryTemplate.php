@@ -209,9 +209,6 @@
             <br>
             
 
-            <h4>
-                Description:
-            </h4>
             <p>
                 <?php echo $q['report']?>
             </p>

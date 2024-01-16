@@ -228,7 +228,9 @@
             else 
             {
                 $stmt = "UPDATE entrysubdb SET 
-                name = '$name', location = '$location', title = '$title', report = '$report', type = '$type', threat = '$threat', status = '$status', image = '$image', entryName = '$entryName'
+                name = '$name', location = '$location', title = '$title', 
+                report = '$report', type = '$type', threat = '$threat', status = '$status', 
+                image = '$image', entryName = '$entryName'
                 WHERE id = $id";
                 mysqli_query($con, $stmt);
                 ?>
