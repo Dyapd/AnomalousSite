@@ -163,9 +163,9 @@
             </div>
         </div>
 
-        <table id="example" class="table table-hover table-bordered masterlist" style="width:100%">
+        <table id="example" class="table table-hover table-bordered table-success masterlist" style="width:100%">
             <thead>
-                <tr>
+                <tr class="table-dark">
                     <th>Name</th>
                     <th>Entry No.</th>
                     <th>Classification</th>
@@ -176,7 +176,7 @@
             <tbody>
                 <tr>
                     <?php while($row = mysqli_fetch_array($result)):; ?>
-                    <td><a href="entryTemplate.php?id=<?php echo $row['id'];?>"> <?php echo $row[3];?> </a> </td>
+                    <td><a href="entryTemplate.php?id=<?php echo $row['id'];?>" class="link-list"> <?php echo $row[3];?> </a> </td>
                     <td><?php echo $row[9];?></td>
                     <td><?php echo $row[5];?></td>
                     <td><?php echo $row[6];?></td>  

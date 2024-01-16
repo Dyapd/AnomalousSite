@@ -165,7 +165,8 @@
 
             </p>
         </div>
-        
+        <hr class="line-recruitment">
+
         <div class="container-bottom-main-about">
             <h1>
                 Purpose of this Website
@@ -178,6 +179,8 @@
 
             </p>
         </div>
+        
+        <hr class="line-recruitment">
 
         <h2>
             Important Employees

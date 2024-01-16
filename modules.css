@@ -45,7 +45,8 @@
     text-decoration: none;
     color: white;
     float: right;
-    margin: 50px;
+    margin: 10px;
+    padding: 5px
 }
 
 .home-top- a:hover{
@@ -854,5 +855,16 @@ th:nth-child(1){
     font-style: italic;
    
     width: 100%;
+}
+
+
+/* styles for list */
+
+.link-list{
+    color: black;
+}
+
+.link-list:hover{
+    color: gray;
 }
 
