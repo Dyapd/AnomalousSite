@@ -152,7 +152,7 @@
                 <label for="name" class="menu-form">Author Name*:</label> <br>
                 <input type="text" class="textFields-form" name="name" value = "<?php echo $q['name']?>"required> <br>
 
-                <label for="anomalylocation" class="menu-form">Anomaly Location*:</label> <br>
+                <label for="anomalylocation" class="menu-form">Anomaly Location (Current)*:</label> <br>
                 <input type="text" class="textFields-form" name="location" value = "<?php echo $q['location']?>" required> <br>
 
                 <label for="investigationtitle" class="menu-form">Investigation Name (Title)*:</label> <br>
@@ -169,15 +169,15 @@
                 <textarea name="reporte" id="report" rows="10" class="textFields-form" name="report" 
                 required><?php echo $q['report']?></textarea> <br>
 
-                <label for="imgrep" class="menu-form">Photo:</label>
+                <label for="imgrep" class="menu-form">Photo(Leave empty if no change):</label>
                 <input type="file" id="fileInput" class="inImg-form" name="img" accept=".jpg, .jpeg, .png"> <br>   
 
                 <div class="selectmenu" class="menu-form">
                     <select name="type" id="type" class="menu-form"  required > 
-                        <option value="Object">Type: Object</option>
-                        <option value="Entity">Type: Entity</option>
-                        <option value="Event">Type: Event</option>
-                        <option value="Place">Type: Place</option>
+                        <option value="Object" <?php if($q['type'] == 'Object'): ?> selected="selected"<?php endif; ?>>Type: Object</option>
+                        <option value="Entity" <?php if($q['type'] == 'Entity'): ?> selected="selected"<?php endif; ?>>Type: Entity</option>
+                        <option value="Event" <?php if($q['type'] == 'Event'): ?> selected="selected"<?php endif; ?>>Type: Event</option>
+                        <option value="Place" <?php if($q['type'] == 'Place'): ?> selected="selected"<?php endif; ?>>Type: Place</option>
                     </select>
                 </div>
 
@@ -185,11 +185,11 @@
 
                 <div class="selectmenu" >
                     <select name="threat" id="threatLevel" class="menu-form" required> 
-                        <option value="Vicinity">Threat Level: Vicinity</option>
-                        <option value="Local">Threat Level: Local</option>
-                        <option value="Regional">Threat Level: Regional</option>
-                        <option value="Continental">Threat Level: Continental</option>
-                        <option value="Global">Threat Level: Global</option>
+                        <option value="Vicinity" <?php if($q['threat'] == 'Vicinity'): ?> selected="selected"<?php endif; ?>>Threat Level: Vicinity</option>
+                        <option value="Local" <?php if($q['threat'] == 'Local'): ?> selected="selected"<?php endif; ?>>Threat Level: Local</option>
+                        <option value="Regional" <?php if($q['threat'] == 'Regional'): ?> selected="selected"<?php endif; ?>>Threat Level: Regional</option>
+                        <option value="Continental" <?php if($q['threat'] == 'Continental'): ?> selected="selected"<?php endif; ?>>Threat Level: Continental</option>
+                        <option value="Global" <?php if($q['threat'] == 'Global'): ?> selected="selected"<?php endif; ?>>Threat Level: Global</option>
                     </select>
                 </div>
 
@@ -197,11 +197,11 @@
 
                 <div class="selectmenu">
                     <select name="status" id="status" class="menu-form" selected required> 
-                        <option value="Unknown">Status: Unknown</option>
-                        <option value="Secured">Status: Secured</option>
-                        <option value="Cooperative">Status: Cooperative</option>
-                        <option value="Monitored">Status: Monitored</option>
-                        <option value="Terminated">Status: Terminated</option>
+                        <option value="Unknown" <?php if($q['status'] == 'Unknown'): ?> selected="selected"<?php endif; ?>>Status: Unknown</option>
+                        <option value="Secured" <?php if($q['status'] == 'Secured'): ?> selected="selected"<?php endif; ?>>Status: Secured</option>
+                        <option value="Cooperative" <?php if($q['status'] == 'Cooperative'): ?> selected="selected"<?php endif; ?>>Status: Cooperative</option>
+                        <option value="Monitored" <?php if($q['status'] == 'Monitored'): ?> selected="selected"<?php endif; ?>>Status: Monitored</option>
+                        <option value="Terminated" <?php if($q['status'] == 'Terminated'): ?> selected="selected"<?php endif; ?>>Status: Terminated</option>
                     </select>
                 </div>
 

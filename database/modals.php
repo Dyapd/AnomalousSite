@@ -247,11 +247,22 @@
             /* if pic is not uploaded succesfully  */
             else 
             {
+        
+            $stmt = "UPDATE entrysubdb SET 
+            name = '$name', location = '$location', title = '$title', 
+            report = '$report', type = '$type', threat = '$threat', status = '$status', 
+            entryName = '$entryName'
+            WHERE id = $id";
+            mysqli_query($con, $stmt);
             ?>
-                <script>
-                alert("Photo Not Uploaded...");
-                </script>
+            <script>
+                alert("Entry Edited Successfully!");
+            </script>
+            
             <?php
+
+            header("Location:entryList.php");
+            exit();
             }
         }
     }elseif(isset($_REQUEST['delete'])){
