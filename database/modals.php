@@ -172,6 +172,11 @@
             $image = $_FILES["img"]['name'];
             $entryName = $_POST['entryName'];
 
+            $safename = addslashes($name);
+            $safelocation = addslashes($location);
+            $safetitle = addslashes($name);
+            $safereport = addslashes($report);
+
             /* this is for inserting images included is validation for image type and size */
 
             if(move_uploaded_file($_FILES['img']['tmp_name'], $_SERVER['DOCUMENT_ROOT']. '/AnomalousSite/images/'. $image))
@@ -228,8 +233,8 @@
             else 
             {
                 $stmt = "UPDATE entrysubdb SET 
-                name = '$name', location = '$location', title = '$title', 
-                report = '$report', type = '$type', threat = '$threat', status = '$status', 
+                name = '$safename', location = '$safelocation', title = '$safetitle', 
+                report = '$safereport', type = '$type', threat = '$threat', status = '$status', 
                 image = '$image', entryName = '$entryName'
                 WHERE id = $id";
                 mysqli_query($con, $stmt);

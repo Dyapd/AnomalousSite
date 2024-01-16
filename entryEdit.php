@@ -169,7 +169,7 @@
                 <textarea name="reporte" id="report" rows="10" class="textFields-form" name="report" 
                 required><?php echo $q['report']?></textarea> <br>
 
-                <label for="imgrep" class="menu-form">Photo(Leave empty if no change):</label>
+                <label for="imgrep" class="menu-form">Photo (Leave empty if no change):</label>
                 <input type="file" id="fileInput" class="inImg-form" name="img" accept=".jpg, .jpeg, .png"> <br>   
 
                 <div class="selectmenu" class="menu-form">
