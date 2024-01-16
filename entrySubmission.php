@@ -162,10 +162,10 @@
             <textarea name="reporte" id="report" rows="10" class="textFields-form" name="report" required></textarea> <br>
 
             <label for="imgrep" class="menu-form">Photo:</label>
-            <input type="file" id="fileInput" class="inImg-form" name="img" accept=".jpg, .jpeg, .png"> <br>   
+            <input type="file" id="fileInput" class="form-control inImg-form" name="img" accept=".jpg, .jpeg, .png"> <br>   
 
             <div class="selectmenu" class="menu-form">
-                <select name="type" id="type" class="menu-form" required > 
+                <select name="type" id="type" class="select-menu-form" required > 
                     <option value="Object">Type: Object</option>
                     <option value="Entity">Type: Entity</option>
                     <option value="Event">Type: Event</option>
@@ -176,7 +176,7 @@
             <br>
 
             <div class="selectmenu" >
-                <select name="threat" id="threatLevel" class="menu-form" required> 
+                <select name="threat" id="threatLevel" class="select-menu-form" required> 
                     <option value="Vicinity">Threat Level: Vicinity</option>
                     <option value="Local">Threat Level: Local</option>
                     <option value="Regional">Threat Level: Regional</option>
@@ -188,7 +188,7 @@
             <br>
 
             <div class="selectmenu">
-                <select name="status" id="status" class="menu-form" required> 
+                <select name="status" id="status" class="select-menu-form" required> 
                     <option value="Unknown">Status: Unknown</option>
                     <option value="Secured">Status: Secured</option>
                     <option value="Cooperative">Status: Cooperative</option>

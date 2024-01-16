@@ -174,7 +174,7 @@
 
             $safename = addslashes($name);
             $safelocation = addslashes($location);
-            $safetitle = addslashes($name);
+            $safetitle = addslashes($title);
             $safereport = addslashes($report);
 
             /* this is for inserting images included is validation for image type and size */
@@ -254,8 +254,8 @@
             {
         
             $stmt = "UPDATE entrysubdb SET 
-            name = '$name', location = '$location', title = '$title', 
-            report = '$report', type = '$type', threat = '$threat', status = '$status', 
+            name = '$safename', location = '$safelocation', title = '$safetitle', 
+            report = '$safereport', type = '$type', threat = '$threat', status = '$status', 
             entryName = '$entryName'
             WHERE id = $id";
             mysqli_query($con, $stmt);

@@ -797,6 +797,17 @@ th:nth-child(1){
 
 .textFields-form{
     width: 100%;
+    background-color: #B5CB99;
+    border: none;
+    border-radius: 5px;
+}
+
+.select-menu-form{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #B5CB99;
+    border: none;
+    border-radius: 5px;
 }
 
 .menu-form{

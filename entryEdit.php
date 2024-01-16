@@ -170,10 +170,10 @@
                 required><?php echo $q['report']?></textarea> <br>
 
                 <label for="imgrep" class="menu-form">Photo (Leave empty if no change):</label>
-                <input type="file" id="fileInput" class="inImg-form" name="img" accept=".jpg, .jpeg, .png"> <br>   
+                <input type="file" id="fileInput" class="form-control inImg-form" name="img" accept=".jpg, .jpeg, .png"> <br>   
 
                 <div class="selectmenu" class="menu-form">
-                    <select name="type" id="type" class="menu-form"  required > 
+                    <select name="type" id="type" class="select-menu-form"  required > 
                         <option value="Object" <?php if($q['type'] == 'Object'): ?> selected="selected"<?php endif; ?>>Type: Object</option>
                         <option value="Entity" <?php if($q['type'] == 'Entity'): ?> selected="selected"<?php endif; ?>>Type: Entity</option>
                         <option value="Event" <?php if($q['type'] == 'Event'): ?> selected="selected"<?php endif; ?>>Type: Event</option>
@@ -184,7 +184,7 @@
                 <br>
 
                 <div class="selectmenu" >
-                    <select name="threat" id="threatLevel" class="menu-form" required> 
+                    <select name="threat" id="threatLevel" class="select-menu-form" required> 
                         <option value="Vicinity" <?php if($q['threat'] == 'Vicinity'): ?> selected="selected"<?php endif; ?>>Threat Level: Vicinity</option>
                         <option value="Local" <?php if($q['threat'] == 'Local'): ?> selected="selected"<?php endif; ?>>Threat Level: Local</option>
                         <option value="Regional" <?php if($q['threat'] == 'Regional'): ?> selected="selected"<?php endif; ?>>Threat Level: Regional</option>
@@ -196,7 +196,7 @@
                 <br>
 
                 <div class="selectmenu">
-                    <select name="status" id="status" class="menu-form" selected required> 
+                    <select name="status" id="status" class="select-menu-form" selected required> 
                         <option value="Unknown" <?php if($q['status'] == 'Unknown'): ?> selected="selected"<?php endif; ?>>Status: Unknown</option>
                         <option value="Secured" <?php if($q['status'] == 'Secured'): ?> selected="selected"<?php endif; ?>>Status: Secured</option>
                         <option value="Cooperative" <?php if($q['status'] == 'Cooperative'): ?> selected="selected"<?php endif; ?>>Status: Cooperative</option>
