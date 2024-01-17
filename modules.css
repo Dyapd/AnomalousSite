@@ -797,7 +797,7 @@ th:nth-child(1){
 
 .textFields-form{
     width: 100%;
-    background-color: #B5CB99;
+    background-color: #d1e7dd;
     border: none;
     border-radius: 5px;
 }
@@ -805,7 +805,7 @@ th:nth-child(1){
 .select-menu-form{
     width: 100%;
     margin-bottom: 10px;
-    background-color: #B5CB99;
+    background-color: #d1e7dd;
     border: none;
     border-radius: 5px;
 }
@@ -819,7 +819,12 @@ th:nth-child(1){
     width: 100%;
     margin-bottom: 15px;
     text-align: center;
+    background-color:  #d1e7dd;
 }
+
+
+
+
 
 .btnSubmit-form{
     display: flex;

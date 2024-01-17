@@ -10,12 +10,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="layouts.css">
     <link rel="stylesheet" href="modules.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>Entry Submission</title>
 </head>
 <body>
@@ -185,11 +188,11 @@
 
                 <div class="selectmenu" >
                     <select name="threat" id="threatLevel" class="select-menu-form" required> 
-                        <option value="Vicinity" <?php if($q['threat'] == 'Vicinity'): ?> selected="selected"<?php endif; ?>>Threat Level: Vicinity</option>
-                        <option value="Local" <?php if($q['threat'] == 'Local'): ?> selected="selected"<?php endif; ?>>Threat Level: Local</option>
-                        <option value="Regional" <?php if($q['threat'] == 'Regional'): ?> selected="selected"<?php endif; ?>>Threat Level: Regional</option>
-                        <option value="Continental" <?php if($q['threat'] == 'Continental'): ?> selected="selected"<?php endif; ?>>Threat Level: Continental</option>
-                        <option value="Global" <?php if($q['threat'] == 'Global'): ?> selected="selected"<?php endif; ?>>Threat Level: Global</option>
+                        <option value="Vicinity" <?php if($q['threat'] == 'Vicinity'): ?> selected="selected"<?php endif; ?>>Influence Boundary: Vicinity</option>
+                        <option value="Local" <?php if($q['threat'] == 'Local'): ?> selected="selected"<?php endif; ?>>Influence Boundary: Local</option>
+                        <option value="Regional" <?php if($q['threat'] == 'Regional'): ?> selected="selected"<?php endif; ?>>Influence Boundary: Regional</option>
+                        <option value="Continental" <?php if($q['threat'] == 'Continental'): ?> selected="selected"<?php endif; ?>>Influence Boundary: Continental</option>
+                        <option value="Global" <?php if($q['threat'] == 'Global'): ?> selected="selected"<?php endif; ?>>Influence Boundary: Global</option>
                     </select>
                 </div>
 

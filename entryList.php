@@ -169,7 +169,7 @@
                     <th>Name</th>
                     <th>Entry No.</th>
                     <th>Classification</th>
-                    <th>Threat Level</th>
+                    <th>Influence Boundary</th>
                     <th>Status</th>
                 </tr>
             </thead>

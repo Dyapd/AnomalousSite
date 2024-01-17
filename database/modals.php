@@ -122,6 +122,9 @@
                     alert("Entry Number Already Exists.");
                 </script>
                 <?php
+
+                header("Location:entrySubmission.php");
+
             } 
             else 
             {

@@ -187,7 +187,7 @@
             <h2>Classification:</h2>
             <p> <?php echo $q['type']?> </p>
 
-            <h2>Threat Level:</h2>
+            <h2>Influence Boundary:</h2>
             <p> <?php echo $q['threat']?> </p>
 
             <h2>Current Location:</h2>

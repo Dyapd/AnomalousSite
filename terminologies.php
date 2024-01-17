@@ -205,7 +205,7 @@
         <hr>
 
         <h2>
-            Threat Level
+            Influence Boundary
         </h2>
 
         <p>
@@ -213,7 +213,7 @@
         </p>
 
         <h3>
-            Threat Levels:
+            Levels:
         </h3>
 
         <h4>

@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="layouts.css">
     <link rel="stylesheet" href="modules.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>Entry Submission</title>
 </head>
 <body>
@@ -177,11 +180,11 @@
 
             <div class="selectmenu" >
                 <select name="threat" id="threatLevel" class="select-menu-form" required> 
-                    <option value="Vicinity">Threat Level: Vicinity</option>
-                    <option value="Local">Threat Level: Local</option>
-                    <option value="Regional">Threat Level: Regional</option>
-                    <option value="Continental">Threat Level: Continental</option>
-                    <option value="Global">Threat Level: Global</option>
+                    <option value="Vicinity">Influence Boundary: Vicinity</option>
+                    <option value="Local">Influence Boundary: Local</option>
+                    <option value="Regional">Influence Boundary: Regional</option>
+                    <option value="Continental">Influence Boundary: Continental</option>
+                    <option value="Global">Influence Boundary: Global</option>
                 </select>
             </div>
 
