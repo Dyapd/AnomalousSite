@@ -241,13 +241,13 @@
                                 <h5>Borealis Worm</h5>
                             </div>
                         </div>
-                        <div class="carousel-item active">
+                        <div class="carousel-item ">
                             <a href="entryTemplate.php?id=37"><img src="#" class="d-block w-100" alt="SAMPLEPICTURE"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>SAMPLETEXT</h5>
                             </div>
                         </div>
-                        <div class="carousel-item active">
+                        <div class="carousel-item ">
                             <a href="#"><img src="#" class="d-block w-100" alt="SAMPLEPICTURE"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>SAMPLETEXT</h5>

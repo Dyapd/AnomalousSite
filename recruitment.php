@@ -403,7 +403,7 @@
                 "Get our commission, Capture these f@cks, Get paid. In that order."
                 <br>
                 <br>
-                -3rd Valkyrie Captain “Vida” talking to his valkyries.
+                -3rd Valkyrie Captain "Arashi" talking to his valkyries.
             </p>  
 
             <div class="image-recruitment">
@@ -434,7 +434,7 @@
                 “The Mobile Office Maker are designed to be a forward base, never stepping back against anomalies that threatens our world”
                 <br>
                 <br>
-                -Director of Design and Technology, Alliyah “Cawl” Belisarius.
+                -Director of Design and Technology, Alliyah “Cawl” Hernandez.
             </p>  
 
             <div class="image-recruitment">
