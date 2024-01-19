@@ -198,20 +198,20 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <a href="entryTemplate.php?id=40"><img src="images/samplean.jpg" class="d-block w-100" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-none d-md-block active-home">
                             <h5>The Moving City</h5>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <a href="entryTemplate.php?id=41"><img src="images/pl001.png" class="d-block w-100" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-none d-md-block active-home">
                             <h5>Bermuda Triangle</h5>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <a href="#"><img src="..." class="d-block w-100" alt="SAMPLEPICTURE"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>SAMPLETEXT</h5>
+                        <a href="entryTemplate.php?id=57"><img src="images/watcherslogo.png" class="d-block w-100" alt="SAMPLEPICTURE"></a>
+                        <div class="carousel-caption d-none d-md-block active-home">
+                            <h5>Cliche Story</h5>
                         </div>
                       </div>
                     </div>
@@ -237,20 +237,20 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                             <a href="entryTemplate.php?id=37"><img src="images/samplean2.jpg" class="d-block w-100" alt="..."></a>
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-none d-md-block active-home" >
                                 <h5>Borealis Worm</h5>
                             </div>
                         </div>
                         <div class="carousel-item ">
-                            <a href="entryTemplate.php?id=37"><img src="#" class="d-block w-100" alt="SAMPLEPICTURE"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>SAMPLETEXT</h5>
+                            <a href="entryTemplate.php?id=61"><img src="images/en004.jpg" class="d-block w-100" alt="SAMPLEPICTURE"></a>
+                            <div class="carousel-caption d-none d-md-block active-home">
+                                <h5>Anywhere Dude</h5>
                             </div>
                         </div>
                         <div class="carousel-item ">
-                            <a href="#"><img src="#" class="d-block w-100" alt="SAMPLEPICTURE"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>SAMPLETEXT</h5>
+                            <a href="entryTemplate.php?id=62"><img src="images/watcherslogo.png" class="d-block w-100" alt="SAMPLEPICTURE"></a>
+                            <div class="carousel-caption d-none d-md-block active-home">
+                                <h5>Sudden Human Combustion Syndrome</h5>
                             </div>
                         </div>
                     </div>

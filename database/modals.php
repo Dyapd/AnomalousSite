@@ -72,6 +72,7 @@
             $image = $_FILES["img"]['name'];
             $entryName = $_POST['entryName'];
 
+
             /* this is for inserting images included is validation for image type and size */
 
             if(move_uploaded_file($_FILES['img']['tmp_name'], $_SERVER['DOCUMENT_ROOT']. '/AnomalousSite/images/'. $image))
@@ -122,8 +123,6 @@
                     alert("Entry Number Already Exists.");
                 </script>
                 <?php
-
-                header("Location:entrySubmission.php");
 
             } 
             else 
